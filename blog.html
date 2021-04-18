@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog page</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header>
+        <h1>Blog page</h1>
+    </header>
+    <main>
+        <form action="" id="booksform">
+            <fieldset>
+                <Label for="username">Name: </Label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <br>
+                
+                <Label for="bookname">Bookname: </Label>
+                <input type="text" id="bookname" name="bookname" required>
+                <br>
+                <br>
+                
+                <Label for="rating" id="ratingTag">Rating: </Label>
+                <div class="rating">
+                    <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                    <label for="star5" >☆</label>
+                    <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                    <label for="star4" >☆</label>
+                    <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                    <label for="star3" >☆</label>
+                    <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                    <label for="star2" >☆</label>
+                    <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                    <label for="star1" >☆</label>
+                    <div class="clear"></div>
+                </div>
+                <br>
+                <br>
+                
+                <Label for="comment">Comment: </Label>
+                <br>
+                <input type="text" id="comment" name="comment">
+                <br>
+                <br>
+
+                <input type="Submit">
+
+            </fieldset>
+        </form>
+        <section id="blogSection">
+
+        </section>
+
+    </main>
+    <footer>
+        <script src="js/blog.js"></script>
+    </footer>
+    
+</body>
+</html>
