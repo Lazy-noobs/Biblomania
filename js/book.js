@@ -394,7 +394,7 @@ let books = [
       "pages": 417,
       "title": "One Hundred Years of Solitude",
       "year": 1967,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
     },
     {
       "author": "Gabriel Garc\u00eda M\u00e1rquez",
@@ -439,7 +439,8 @@ let books = [
       "pages": 600,
       "title": "The Tin Drum",
       "year": 1959,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
+
 
     },
     {
@@ -451,7 +452,7 @@ let books = [
       "pages": 494,
       "title": "The Devil to Pay in the Backlands",
       "year": 1956,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
     },
     {
       "author": "Knut Hamsun",
@@ -473,7 +474,8 @@ let books = [
       "pages": 128,
       "title": "The Old Man and the Sea",
       "year": 1952,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
+
     },
     {
       "author": "Homer",
@@ -539,7 +541,9 @@ let books = [
       "pages": 160,
       "title": "The Trial",
       "year": 1925,
-      "genre":"scienceFiction"
+
+      "genre":"science fiction"
+
     },
     {
       "author": "Franz Kafka",
@@ -550,7 +554,8 @@ let books = [
       "pages": 352,
       "title": "The Castle",
       "year": 1926,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
+
 
     },
     {
@@ -714,7 +719,8 @@ let books = [
       "pages": 404,
       "title": "Essays",
       "year": 1595,
-      "genre":"scienceFiction"
+      "genre":"science fiction"
+
 
     },
     {
@@ -786,7 +792,9 @@ let books = [
       "pages": 272,
       "title": "Nineteen Eighty-Four",
       "year": 1949,
-      "genre":"scienceFiction"
+
+      "genre":"science fiction"
+
 
     },
     {
@@ -845,7 +853,7 @@ let books = [
     'pages': 623,
     'title': 'Gargantua and Pantagruel',
     'year': 1533,
-    'genre':'historical'
+    'genre':'fantasy'
   },
   {
     'author': 'Juan Rulfo',
@@ -856,7 +864,7 @@ let books = [
     'pages': 124,
     'title': 'Pedro P\u00e1ramo',
     'year': 1955,
-    'genre':'historical'
+    'genre':'science fiction'
   },
   {
     'author': 'Rumi',
@@ -889,7 +897,7 @@ let books = [
     'pages': 298,
     'title': 'Bostan',
     'year': 1257,
-    'genre':'poetry'
+    'genre':'romance'
   },
   {
     'author': 'Tayeb Salih',
