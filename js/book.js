@@ -358,7 +358,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
       "pages": 417,
       "title": "One Hundred Years of Solitude",
-      "year": 1967
+      "year": 1967,
+      "genre":"scienceFiction"
     },
     {
       "author": "Gabriel Garc\u00eda M\u00e1rquez",
@@ -368,7 +369,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
       "pages": 368,
       "title": "Love in the Time of Cholera",
-      "year": 1985
+      "year": 1985,
+      "genre":"romance"
+
     },
     {
       "author": "Johann Wolfgang von Goethe",
@@ -378,7 +381,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust\n",
       "pages": 158,
       "title": "Faust",
-      "year": 1832
+      "year": 1832,
+      "genre":"historical"
     },
     {
       "author": "Nikolai Gogol",
@@ -388,7 +392,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Dead_Souls\n",
       "pages": 432,
       "title": "Dead Souls",
-      "year": 1842
+      "year": 1842,
+      "genre":"historical"
     },
     {
       "author": "G\u00fcnter Grass",
@@ -398,7 +403,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Tin_Drum\n",
       "pages": 600,
       "title": "The Tin Drum",
-      "year": 1959
+      "year": 1959,
+      "genre":"scienceFiction"
+
     },
     {
       "author": "Jo\u00e3o Guimar\u00e3es Rosa",
@@ -408,7 +415,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n",
       "pages": 494,
       "title": "The Devil to Pay in the Backlands",
-      "year": 1956
+      "year": 1956,
+      "genre":"scienceFiction"
     },
     {
       "author": "Knut Hamsun",
@@ -418,7 +426,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)\n",
       "pages": 176,
       "title": "Hunger",
-      "year": 1890
+      "year": 1890,
+      "genre":"fantasy"
     },
     {
       "author": "Ernest Hemingway",
@@ -428,7 +437,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
       "pages": 128,
       "title": "The Old Man and the Sea",
-      "year": 1952
+      "year": 1952,
+      "genre":"scienceFiction"
     },
     {
       "author": "Homer",
@@ -438,7 +448,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Iliad\n",
       "pages": 608,
       "title": "Iliad",
-      "year": -735
+      "year": -735,
+      "genre":"historical"
     },
     {
       "author": "Homer",
@@ -448,7 +459,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Odyssey\n",
       "pages": 374,
       "title": "Odyssey",
-      "year": -800
+      "year": -800,
+      "genre":"romance"
     },
     {
       "author": "Henrik Ibsen",
@@ -458,7 +470,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House\n",
       "pages": 68,
       "title": "A Doll's House",
-      "year": 1879
+      "year": 1879,
+      "genre":"romance"
     },
     {
       "author": "James Joyce",
@@ -468,7 +481,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
       "pages": 228,
       "title": "Ulysses",
-      "year": 1922
+      "year": 1922,
+      "genre":"historical"
     },
     {
       "author": "Franz Kafka",
@@ -478,7 +492,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories\n",
       "pages": 488,
       "title": "Stories",
-      "year": 1924
+      "year": 1924,
+      "genre":"romance"
     },
     {
       "author": "Franz Kafka",
@@ -488,7 +503,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Trial\n",
       "pages": 160,
       "title": "The Trial",
-      "year": 1925
+      "year": 1925,
+      "genre":"scienceFiction"
     },
     {
       "author": "Franz Kafka",
@@ -498,7 +514,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)\n",
       "pages": 352,
       "title": "The Castle",
-      "year": 1926
+      "year": 1926,
+      "genre":"scienceFiction"
+
     },
     {
       "author": "K\u0101lid\u0101sa",
@@ -508,7 +526,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam\n",
       "pages": 147,
       "title": "The recognition of Shakuntala",
-      "year": 150
+      "year": 150,
+      "genre":"romance"
+
     },
     {
       "author": "Yasunari Kawabata",
@@ -518,7 +538,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain\n",
       "pages": 288,
       "title": "The Sound of the Mountain",
-      "year": 1954
+      "year": 1954,
+      "genre":"romance"
     },
     {
       "author": "Nikos Kazantzakis",
@@ -528,7 +549,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Zorba_the_Greek\n",
       "pages": 368,
       "title": "Zorba the Greek",
-      "year": 1946
+      "year": 1946,
+      "genre":"fantasy"
     },
     {
       "author": "D. H. Lawrence",
@@ -538,7 +560,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Sons_and_Lovers\n",
       "pages": 432,
       "title": "Sons and Lovers",
-      "year": 1913
+      "year": 1913,
+      "genre":"romance"
+
     },
     {
       "author": "Halld\u00f3r Laxness",
@@ -548,7 +572,8 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Independent_People\n",
       "pages": 470,
       "title": "Independent People",
-      "year": 1934
+      "year": 1934,
+      "genre":"historical"
     },
     {
       "author": "Giacomo Leopardi",
@@ -558,7 +583,8 @@ let books = [
       "link": "\n",
       "pages": 184,
       "title": "Poems",
-      "year": 1818
+      "year": 1818,
+      "genre":"romance"
     },
     {
       "author": "Doris Lessing",
@@ -568,7 +594,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
       "pages": 688,
       "title": "The Golden Notebook",
-      "year": 1962
+      "year": 1962,
+      "genre":"historical"
+
     },
     {
       "author": "Astrid Lindgren",
@@ -578,7 +606,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Pippi_Longstocking\n",
       "pages": 160,
       "title": "Pippi Longstocking",
-      "year": 1945
+      "year": 1945,
+      "genre":"fantasy"
+
     },
     {
       "author": "Lu Xun",
@@ -588,7 +618,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary\n",
       "pages": 389,
       "title": "Diary of a Madman",
-      "year": 1918
+      "year": 1918,
+      "genre":"historical"
+
     },
     {
       "author": "Naguib Mahfouz",
@@ -598,7 +630,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi\n",
       "pages": 355,
       "title": "Children of Gebelawi",
-      "year": 1959
+      "year": 1959,
+      "genre":"romance"
+
     },
     {
       "author": "Thomas Mann",
@@ -608,7 +642,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Buddenbrooks\n",
       "pages": 736,
       "title": "Buddenbrooks",
-      "year": 1901
+      "year": 1901,
+      "genre":"historical"
+
     },
     {
       "author": "Thomas Mann",
@@ -618,7 +654,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Magic_Mountain\n",
       "pages": 720,
       "title": "The Magic Mountain",
-      "year": 1924
+      "year": 1924,
+      "genre":"historical"
+
     },
     {
       "author": "Herman Melville",
@@ -628,7 +666,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Moby-Dick\n",
       "pages": 378,
       "title": "Moby Dick",
-      "year": 1851
+      "year": 1851,
+      "genre":"romance"
+
     },
     {
       "author": "Michel de Montaigne",
@@ -638,7 +678,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)\n",
       "pages": 404,
       "title": "Essays",
-      "year": 1595
+      "year": 1595,
+      "genre":"scienceFiction"
+
     },
     {
       "author": "Elsa Morante",
@@ -648,7 +690,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/History_(novel)\n",
       "pages": 600,
       "title": "History",
-      "year": 1974
+      "year": 1974,
+      "genre":"historical"
+
     },
     {
       "author": "Toni Morrison",
@@ -658,7 +702,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Beloved_(novel)\n",
       "pages": 321,
       "title": "Beloved",
-      "year": 1987
+      "year": 1987,
+      "genre":"historical"
+
     },
     {
       "author": "Murasaki Shikibu",
@@ -668,7 +714,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji\n",
       "pages": 1360,
       "title": "The Tale of Genji",
-      "year": 1006
+      "year": 1006,
+      "genre":"historical"
+
     },
     {
       "author": "Robert Musil",
@@ -678,7 +726,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities\n",
       "pages": 365,
       "title": "The Man Without Qualities",
-      "year": 1931
+      "year": 1931,
+      "genre":"fantasy"
+
     },
     {
       "author": "Vladimir Nabokov",
@@ -688,7 +738,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Lolita\n",
       "pages": 317,
       "title": "Lolita",
-      "year": 1955
+      "year": 1955,
+      "genre":"romance"
+
     },
     {
       "author": "George Orwell",
@@ -698,7 +750,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four\n",
       "pages": 272,
       "title": "Nineteen Eighty-Four",
-      "year": 1949
+      "year": 1949,
+      "genre":"scienceFiction"
+
     },
     {
       "author": "Ovid",
@@ -708,7 +762,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Metamorphoses\n",
       "pages": 576,
       "title": "Metamorphoses",
-      "year": 100
+      "year": 100,
+      "genre":"romance"
+
     },
     {
       "author": "Fernando Pessoa",
@@ -718,7 +774,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet\n",
       "pages": 272,
       "title": "The Book of Disquiet",
-      "year": 1928
+      "year": 1928,
+      "genre":"fantasy"
+
     },
     {
       "author": "Edgar Allan Poe",
@@ -728,7 +786,9 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
       "pages": 842,
       "title": "Tales",
-      "year": 1950
+      "year": 1950,
+      "genre":"romance"
+
     },
     {
       "author": "Marcel Proust",
