@@ -1,0 +1,131 @@
+header .topnav {
+    background-color: #747070;
+    overflow: hidden;
+    margin: 10px;
+    }
+    
+    header .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-style: oblique;
+    
+    }
+    
+    header .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    header .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+    }
+    
+    header .topnav .search-container {
+    float: right;
+    padding: 10px 10px;
+    margin-right: 100px;
+    }
+    
+    header .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 3px;
+    font-size: 17px;
+    border: none;
+    }
+    
+    header .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 3px;
+    height: 38px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    }
+    
+    header .topnav .search-container button:hover {
+    background: #ccc;
+    }
+    
+    @media screen and (max-width: 600px) {
+    header .topnav .search-container {
+        float: none;
+    }
+    header .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    header .topnav input[type=text] {
+        border: 1px solid #ccc;  
+    }
+    }
+main{
+    /* border: 2px solid #845ec2;
+    background-color:#f7d9d9 ; */
+    width: 90%;
+    height: 50%;
+    text-align: center;
+    margin: 30px 0 10px 70px;
+}
+#Adventure div{
+    display:inline-block;
+    padding-left: 10px;
+
+}
+#Fantasy div{
+    display:inline-block;
+    padding-left: 10px;
+
+}
+#Horror div{
+    display:inline-block;
+    padding-left: 10px;
+
+}
+#Romance div{
+    display:inline-block;
+    padding-left: 10px;
+
+}
+#icons img {
+    width: auto;
+    height: auto;
+    float: right;
+    border: 0px solid;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    }
+footer a{
+
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;   
+    
+    }
+    footer ul{
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: medium;    
+    float: left;  
+    
+    }

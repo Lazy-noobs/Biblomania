@@ -1,6 +1,5 @@
 'use strict';
 let books = [
-<<<<<<< HEAD
     {
       "author": "Chinua Achebe",
       "country": "Nigeria",
@@ -64,7 +63,7 @@ let books = [
       "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
       "pages": 288,
       "title": "One Thousand and One Nights",
-      "year": 1200
+      "year": 1200,
       "genre":"fantasy"
     },
     {
@@ -384,7 +383,7 @@ let books = [
       "pages": 218,
       "title": "Gypsy Ballads",
       "year": 1928,
-      "genre":"historical";
+      "genre":"historical"
     },
     {
       "author": "Gabriel Garc\u00eda M\u00e1rquez",
@@ -1068,4 +1067,4 @@ let books = [
   }
 ];
 console.log(books[0].author);
->>>>>>> 8b79bcdb41b2ee87e60a05447dcb471ea7d0c2b9
+
