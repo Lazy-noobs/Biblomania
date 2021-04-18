@@ -441,6 +441,7 @@ let books = [
       "year": 1959,
       "genre":"science fiction"
 
+
     },
     {
       "author": "Jo\u00e3o Guimar\u00e3es Rosa",
@@ -474,6 +475,7 @@ let books = [
       "title": "The Old Man and the Sea",
       "year": 1952,
       "genre":"science fiction"
+
     },
     {
       "author": "Homer",
@@ -539,7 +541,9 @@ let books = [
       "pages": 160,
       "title": "The Trial",
       "year": 1925,
+
       "genre":"science fiction"
+
     },
     {
       "author": "Franz Kafka",
@@ -551,6 +555,7 @@ let books = [
       "title": "The Castle",
       "year": 1926,
       "genre":"science fiction"
+
 
     },
     {
@@ -716,6 +721,7 @@ let books = [
       "year": 1595,
       "genre":"science fiction"
 
+
     },
     {
       "author": "Elsa Morante",
@@ -786,7 +792,9 @@ let books = [
       "pages": 272,
       "title": "Nineteen Eighty-Four",
       "year": 1949,
+
       "genre":"science fiction"
+
 
     },
     {
