@@ -1,49 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Blog page</title>
     <link rel="stylesheet" href="css/blog.css">
 </head>
+
 <body>
     <header>
-        <h1>Blog page</h1>
+        <h1>Our Blog</h1>
     </header>
+    <div class="row">
+        <div class="left-column">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>Title description</h5>
+                <img
+                    src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/78b52dd4-3727-49da-9098-5454cf6a5973/authors-favourite-bookshops-header-min.jpg?w=728&h=410">
+                <p>Some Texts</p>
+                <p>ipsum Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit.
+                    Placeat vero fugit aspernatur deserunt, eveniet beatae
+                    in amet qui! Praesentium voluptatibus, animi velit
+                    fugit sapiente autem voluptate est itaque commodi
+                    officiis?</p>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>Title description</h5>
+                <img src="https://www.wantedinmilan.com/i/preview/storage/uploads/2020/01/italys-bookshop-crisis.jpg">
+                <p>Some Texts</p>
+                <p>ipsum Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit.
+                    Placeat vero fugit aspernatur deserunt, eveniet beatae
+                    in amet qui! Praesentium voluptatibus, animi velit
+                    fugit sapiente autem voluptate est itaque commodi
+                    officiis?</p>
+            </div>
+
+        </div>
+        <div class="right-column">
+            <div class="card">
+                <h2>About Us</h2>
+                <img src="" alt="about">
+                <p>Some text</p>
+            </div>
+            <div class="card">
+                <h3>Popular Books</h3>
+                <img src="https://i.pinimg.com/originals/6e/b7/e2/6eb7e2f6acb54b67e2df39ae70e504b2.jpg" alt="popular">
+                <img src="https://pics.filmaffinity.com/Inferno-112442449-large.jpg" alt="popular">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71prRz3q9-L._AC_SY679_.jpg" alt="popular">
+                <p>Some text</p>
+            </div>
+            <div class="card">
+                <h3>Follow Us</h3>
+                <p>Some text..</p>
+            </div>
+
+
+        </div>
+    </div>
     <main>
         <form action="" id="booksform">
             <fieldset>
-                <Label for="username">Name: </Label>
-                <input type="text" id="username" name="username" required>
+                <legend>Book Review</legend>
+                <!-- <Label for="username">Name: </Label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <br> -->
                 <br>
                 <br>
-                
-                <Label for="bookname">Bookname: </Label>
-                <input type="text" id="bookname" name="bookname" required>
+                <Label for="bookname" class="field">
+                    <input type="text" id="bookname" name="bookname" required>
+                    <span class="placeholder">Enter book title</span>
+                </Label>
                 <br>
                 <br>
-                
-                <Label for="rating" id="ratingTag">Rating: </Label>
+
+                <Label for="author" class="field">Author : </Label>
+                <input type="text" id="author" name="author" required>
+                <br>
+                <br>
+
+                <Label for="comment" class="field">I think you would like this book because : </Label>
+                <textarea>
+                    </textarea>
+                <!-- <input type="text" id="author" name="author" required> -->
+                <br>
+                <br>
+
+                <Label for="rating" id="ratingTag"> Star Rating: </Label>
                 <div class="rating">
                     <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
-                    <label for="star5" >☆</label>
+                    <label for="star5">☆</label>
                     <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
-                    <label for="star4" >☆</label>
+                    <label for="star4">☆</label>
                     <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
-                    <label for="star3" >☆</label>
+                    <label for="star3">☆</label>
                     <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
-                    <label for="star2" >☆</label>
+                    <label for="star2">☆</label>
                     <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
-                    <label for="star1" >☆</label>
+                    <label for="star1">☆</label>
                     <div class="clear"></div>
                 </div>
                 <br>
                 <br>
-                
-                <Label for="comment">Comment: </Label>
+
+                <Label for="image" class="field">image : </Label>
                 <br>
-                <input type="text" id="comment" name="comment">
+                <input type="file" id="image" name="image">
                 <br>
                 <br>
 
+                <Label for="name" class="field">Recommended by : </Label>
+                <input type="text" id="name" name="name" required>
+                <br>
                 <input type="Submit">
 
             </fieldset>
@@ -53,9 +124,14 @@
         </section>
 
     </main>
-    <footer>
+    <section>
         <script src="js/blog.js"></script>
+    </section>
+    <footer>
+        Footer
+        <!-- <script src="js/blog.js"></script> -->
     </footer>
-    
+
 </body>
+
 </html>
