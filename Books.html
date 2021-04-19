@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/book.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  
+
   <title>Books Store</title>
 </head>
 
@@ -23,8 +23,6 @@
       <a href="Basket.html">Basket</a>
       <a href="About.html">About</a>
       <a href="#icons">Contact</a>
-      <input type="button" onClick="document.getElementById('Fantasy').scrollIntoView();" />
-      <input type="button" onClick="document.getElementById('Romance').scrollIntoView();" />
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder=" Search " name="search">
@@ -33,72 +31,42 @@
     </div>
   </header>
 
-  <main>
-<!-- CODE HERE -->
-<section id="Adventure">
-  <p>Adventure</p>
-  <div >
-    <img src="img/njals-saga.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book5.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book7.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book8.jpg" width="200px" height="200px"/>
-  </div>
-</section>
-<section id="Fantasy">
-  <p>Fantasy</p>
-  <div>
-    <img src="img/book11.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book12.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book6.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book13.jpg" width="200px" height="200px"/>
-  </div>
-</section>
-<section id="Horror">
-  <p>Horror</p>
-  <div>
-    <img src="img/book10.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book3.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book1.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book4.jpg" width="200px" height="200px"/>
-  </div>
-</section>
-<section id="Romance">
-  <p>Romance</p>
-  <div>
-    <img src="img/book2.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book14.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book15.jpg" width="200px" height="200px"/>
-  </div>
-  <div>
-    <img src="img/book16.jpg" width="200px" height="200px"/>
-  </div>
-  
-</section>
+  <div class="navbar">
+    <a href="#historicalDiv">Historical</a>
+    <a href="#romanceDiv">Romance</a>
+    <a href="#scienceFictionDiv">Science Fiction</a>
+    <a href="#fantasyDiv">Fantasy</a>
 
+  </div>
 
-  </main>
+  <div id="fantasyDiv">
+    <div id="booksImg">
+
+    </div>
+
+  </div>
+
+  <div id="historicalDiv">
+    <div id="booksImg">
+
+    </div>
+
+  </div>
+
+  <div id="romanceDiv">
+    <div id="booksImg">
+
+    </div>
+
+  </div>
+
+  <div id="scienceFictionDiv">
+    <div id="booksImg">
+
+    </div>
+
+  </div>
+
   <br>
   <div>
     <hr class="style-eight">
