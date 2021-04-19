@@ -87,29 +87,45 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
-#fantasyDivDiv div img {
-width: 15rem;
-height: 15rem;
-}
-
-#historicalDiv div img {
-width: 15rem;
-height: 15rem;
-}
-#romanceDiv div img {
-width: 15rem;
-height: 15rem;
-}
-#scienceFictionDiv div img {
-width: 15rem;
-height: 15rem;
-}
-
-#booksImg div {
-display: inline-block;
+#productsDiv div img { 
+display: block;
 margin: 1.5rem;
 border: #271f1f solid 0.2rem;
 padding-bottom: 0.1rem;
+width: 15rem;
+height: 15rem;
+}
+
+#fantasyDiv{
+    display: inline;
+    position: relative;
+}
+#historicalDiv{
+    display: inline;
+    position: relative;
+}
+
+#scienceFictionDiv{
+    display: inline;
+    position: relative;
+}
+#romanceDiv{
+    display: inline;
+    position: relative;
+}
+
+
+#productsDiv div p{
+margin: 1.5rem;
+padding-bottom: 0.1rem;
+}
+
+
+#productsDiv div button {
+margin-top: 0.5rem;
+font-size: 1rem;
+padding: 0.4rem 0.8rem;
+border-radius: 0.2rem;
 }
 
 #icons img {
