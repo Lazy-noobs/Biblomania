@@ -1342,8 +1342,8 @@ const BooksCart = function (items) {
 };
 
 BooksCart.prototype.addBook = function (item) {
-  if(!this.cartBooks.includes(item)){
-  this.cartBooks.push(item);
+  if (!this.cartBooks.includes(item)) {
+    this.cartBooks.push(item);
   }
   console.log(this.cartBooks);
 };
@@ -1364,6 +1364,23 @@ function handleClickingToCart() {
   let index = parseInt(event.target.id);
   booksCart.addBook(books[index]);
   booksCart.saveToStorage();
+
+  //Create a success notification instance
+  const successNotification = window.createNotification({
+    theme: 'success',
+    showDuration: 5000
+  });
+
+  // Invoke success notification
+  successNotification({
+    message: 'Simple success notification'
+  });
+
+  // Use the same instance but pass a title
+  successNotification({
+    title: 'Working',
+    message: 'Simple success notification'
+  });
   counter();
 }
 
