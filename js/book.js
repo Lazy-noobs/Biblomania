@@ -1275,10 +1275,10 @@ let romanceHeader = document.createElement('h2');
 romance.appendChild(romanceHeader);
 romanceHeader.textContent = 'Romance';
 
-let scienceFiction = document.getElementById('scienceFictionDiv');
-let scienceFictionHeader = document.createElement('h2');
+let scienceFiction=document.getElementById('scienceFictionDiv');
+let scienceFictionHeader=document.createElement('h2');
 scienceFiction.appendChild(scienceFictionHeader);
-scienceFictionHeader.textContent = 'Science Fiction';
+scienceFictionHeader.textContent='Science Fiction';
 
 
 
@@ -1330,12 +1330,12 @@ for (let i = 0; i < books.length; i++) {
     let button = document.createElement('button');
     button.textContent = 'add to cart';
     button.id = i;
+
     scienceFiction.appendChild(button);
     button.addEventListener('click', handleClickingToCart);
 
   }
 
-}
 
 const BooksCart = function (items) {
   this.cartBooks = items;
