@@ -1275,10 +1275,10 @@ let romanceHeader = document.createElement('h2');
 romance.appendChild(romanceHeader);
 romanceHeader.textContent = 'Romance';
 
-let scienceFiction=document.getElementById('scienceFictionDiv');
-let scienceFictionHeader=document.createElement('h2');
+let scienceFiction = document.getElementById('scienceFictionDiv');
+let scienceFictionHeader = document.createElement('h2');
 scienceFiction.appendChild(scienceFictionHeader);
-scienceFictionHeader.textContent='Science Fiction';
+scienceFictionHeader.textContent = 'Science Fiction';
 
 
 
@@ -1336,7 +1336,7 @@ for (let i = 0; i < books.length; i++) {
 
   }
 
-
+}
 const BooksCart = function (items) {
   this.cartBooks = items;
 };
@@ -1362,9 +1362,10 @@ function handleClickingToCart() {
   booksCart.addBook(books[index]);
   booksCart.saveToStorage();
 }
+counter();
+
 function counter() {
   const booksCart = JSON.parse(localStorage.getItem('booksCart')) || [];
   let count = document.getElementById('basketCount');
-  count.textContent = booksCart.length ;
+  count.textContent = booksCart.length;
 }
-counter();
