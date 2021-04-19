@@ -9,8 +9,24 @@ container.onclick = e => {
     items.forEach( // reset the active class on the star
       item => item.classList.remove('active')
     );
-    let starRating = e.target.getAttribute('data-rate');
-    console.log(starRating);
+    // let starRating = e.target.getAttribute('data-rate');
+    // console.log(starRating);
+    console.log(e.target.id)
+    if (e.target.id == "star5") {
+      starRating = 5
+    }
+    if (e.target.id == "star4") {
+      starRating = 4
+    }
+    if (e.target.id == "star3") {
+      starRating = 3
+    }
+    if (e.target.id == "star2") {
+      starRating = 2
+    }
+    if (e.target.id == "star1") {
+      starRating = 1
+    }
     elClass.add('active'); // add active class to the clicked star
   }
 };
@@ -19,19 +35,21 @@ container.onclick = e => {
 allBlogs = [];
 
 let blogsForm = document.getElementById('booksform');
-blogsForm.addEventListener('submit',submitter);
+blogsForm.addEventListener('submit', submitter);
 
 function submitter(event) {
   event.preventDefault();
+  console.log(event);
 
   let blog = {
+    author: document.getElementById('author').value,
     name: document.getElementById('username').value,
     bookName: document.getElementById('bookname').value,
-    rating: document.getElementsByClassName('rating').value,
+    rating: starRating,
     comment: document.getElementById('comment').value,
   };
 
-
+  console.log(blog)
   allBlogs.push(blog);
   updateStorage();
 
@@ -42,11 +60,15 @@ function submitter(event) {
   section.appendChild(divElement);
   let name = document.createElement('p');
   divElement.appendChild(name);
-  name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName}`;
+  name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName} by ${allBlogs[i].author}`;
+
+  let rating = document.createElement('p');
+  divElement.appendChild(rating);
+  rating.textContent   = `Book rating : ${allBlogs[i].rating} `;
+
   let comment = document.createElement('p');
   divElement.appendChild(comment);
   comment.textContent = allBlogs[i].comment;
-
 
 }
 
@@ -58,14 +80,19 @@ function render() {
     section.appendChild(divElement);
     let name = document.createElement('p');
     divElement.appendChild(name);
-    name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName}`;
+    name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName} by ${allBlogs[i].author}`;
+
+    let rating = document.createElement('p');
+    divElement.appendChild(rating);
+    rating.textContent   = `Book rating : ${allBlogs[i].rating} `;
+
     let comment = document.createElement('p');
     divElement.appendChild(comment);
     comment.textContent = allBlogs[i].comment;
-  }
+
+  };
 
 }
-
 render();
 
 function updateStorage() {
@@ -74,11 +101,11 @@ function updateStorage() {
 }
 
 
-function getData(){
+function getData() {
   let data = localStorage.getItem('data');
   let dataObj = JSON.parse(data);
 
-  if(dataObj !== null){
+  if (dataObj !== null) {
     allBlogs = dataObj;
   }
 }
