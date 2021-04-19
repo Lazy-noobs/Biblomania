@@ -1229,15 +1229,15 @@ let price = [];
 
 function generatePrice() {
   let randPrice = Math.floor(Math.random() * (100 - 10)) + 10;
-  while (randPrice % 5 != 0) {
+  while (randPrice % 5 !== 0) {
     randPrice = Math.floor(Math.random() * (100 - 10)) + 10;
   }
   return randPrice;
-};
+}
 
 for (let i = 0; i < books.length; i++) {
   price[i] = generatePrice();
-};
+}
 
 function setPriceStorage() {
   let stringArr = JSON.stringify(price);
@@ -1249,7 +1249,7 @@ function setPriceStorage() {
 function getPrice() {
   let priceData = localStorage.getItem('perminantPrice');
   let bookPrice = JSON.parse(priceData);
-  if (bookPrice != null) {
+  if (bookPrice !== null) {
     for (let i = 0; i < books.length; i++) {
       books[i].price = bookPrice[i];
     }
@@ -1283,7 +1283,7 @@ scienceFictionHeader.textContent = 'Science Fiction';
 
 
 for (let i = 0; i < books.length; i++) {
-  if (books[i].genre == 'fantasy') {
+  if (books[i].genre === 'fantasy') {
     let fantasyBook = document.createElement('img');
     fantasyBook.src = books[i].imageLink;
     fantasy.appendChild(fantasyBook);
@@ -1292,8 +1292,11 @@ for (let i = 0; i < books.length; i++) {
     fantasy.appendChild(para);
     let button = document.createElement('button');
     button.textContent = 'add to cart';
+    button.id = i;
     fantasy.appendChild(button);
-  } else if (books[i].genre == 'historical') {
+    button.addEventListener('click', handleClickingToCart);
+
+  } else if (books[i].genre === 'historical') {
     let historicalBook = document.createElement('img');
     historicalBook.src = books[i].imageLink;
     historical.appendChild(historicalBook);
@@ -1302,8 +1305,10 @@ for (let i = 0; i < books.length; i++) {
     historical.appendChild(para);
     let button = document.createElement('button');
     button.textContent = 'add to cart';
+    button.id = i;
     historical.appendChild(button);
-  } else if (books[i].genre == 'romance') {
+    button.addEventListener('click', handleClickingToCart);
+  } else if (books[i].genre === 'romance') {
     let romanceBook = document.createElement('img');
     romanceBook.src = books[i].imageLink;
     romance.appendChild(romanceBook);
@@ -1312,17 +1317,56 @@ for (let i = 0; i < books.length; i++) {
     para.innerHTML = `titel: ${books[i].title}<br> author: ${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
     let button = document.createElement('button');
     button.textContent = 'add to cart';
+    button.id = i;
     romance.appendChild(button);
+    button.addEventListener('click', handleClickingToCart);
   } else {
     let scienceFictionBook = document.createElement('img');
     scienceFictionBook.src = books[i].imageLink;
     scienceFiction.appendChild(scienceFictionBook);
     let para = document.createElement('p');
-    scienceFiction.appendChild(para)
+    scienceFiction.appendChild(para);
     para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
     let button = document.createElement('button');
     button.textContent = 'add to cart';
+    button.id = i;
+
     scienceFiction.appendChild(button);
+    button.addEventListener('click', handleClickingToCart);
+
   }
 
+}
+const BooksCart = function (items) {
+  this.cartBooks = items;
+};
+
+BooksCart.prototype.addBook = function (item) {
+  this.cartBooks.push(item);
+};
+
+BooksCart.prototype.saveToStorage = function () {
+  localStorage.setItem('booksCart', JSON.stringify(this.cartBooks));
+};
+
+BooksCart.prototype.removeBook = function (index) {
+  let newArr = JSON.parse(localStorage.getItem('booksCart'));
+  newArr.splice(index, 1);
+  return newArr;
+};
+
+let booksCart = new BooksCart([]);
+function handleClickingToCart() {
+  event.preventDefault();
+  let index = parseInt(event.target.id);
+  booksCart.addBook(books[index]);
+  booksCart.saveToStorage();
+  counter();
+}
+
+
+function counter() {
+  const booksCart = JSON.parse(localStorage.getItem('booksCart')) || [];
+  let count = document.getElementById('basketCount');
+  count.textContent = booksCart.length;
 }

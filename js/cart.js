@@ -1,126 +1,219 @@
 'use strict';
-console.log('shaima');
-//remove button
-let removeCardItemButtons = document.getElementsByClassName('btn-danger');
-console.log(removeCardItemButtons);
-
-// add event listener, to do something when we click on it, to do this I will loop throw these different object
-for (let i = 0; i < removeCardItemButtons.length; i++) {
-    let button = removeCardItemButtons[i];
-    // add event listener when we click on the button it will make something
-    button.addEventListener('click', removeFun);
-
-}
-
-
-// when the user change the quantity //and remove the number that less than zero
-let quantityInput = document.getElementsByClassName('cart-quantity-input');
-//make loop
-for (let i = 0; i < quantityInput.length; i++) {
-    //git the element from array, so this going to be each one of quantity input 
-    let input = quantityInput[i]; //this.quantityInput = quantityInput[i];
-    // take the input and add event listener 'change' to listen to any time input change and call function quantityChange
-    input.addEventListener('change', quantityChange);
-}
-
-//purchase button
-document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
-
-// this function for the purchase button, named of the fun purchaseClicked
-function purchaseClicked(event) {
-    //alert the user that have purchased item
-    alert('Thank you for purchasing from our online book shop, visit us again :)');
-
-    //to add more than one item
-    // var cartItems = document.getElementsByClassName('cart-items')[0]
-    // while (cartItems.hasChildNodes()) {
-    //     cartItems.removeChild(cartItems.firstChild)
-    // }
-    // updateCartTotal();
-}
 
 
 
-//this function will remove the cart item from our cart
-//we need to talk our function event listener always return an event obj inside the function that calls and this obj has property on it called target
-function removeFun(event) {
-    console.log('clicking...');
-    //target: is whatever the button clicked on
-    let buttonClicked = event.target;
-    //we want to get the cart row that button inside
-    buttonClicked.parentElement.parentElement.remove();
+let container = document.getElementById('orderList');
+let table = document.createElement('table');
+container.appendChild(table);
+let books = [
+    {
+        'author': 'Chinua Achebe',
+        'country': 'Nigeria',
+        'imageLink': 'img/things-fall-apart.jpg',
+        'language': 'English',
+        'link': 'https://en.wikipedia.org/wiki/Things_Fall_Apart\n',
+        'pages': 209,
+        'title': 'Things Fall Apart',
+        'year': 1958,
+        'genre': 'fantasy',
+        'price': 25
+        ,
+    },
+    {
+        'author': 'Hans Christian Andersen',
+        'country': 'Denmark',
+        'imageLink': 'img/fairy-tales.jpg',
+        'language': 'Danish',
+        'link': 'https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n',
+        'pages': 784,
+        'title': 'Fairy tales',
+        'year': 1836,
+        'genre': 'fantasy',
+        'price': 25
 
-    //call updateCartTotal
-    updateCartTotal();
-}
-// removeFun();
+    },
+    {
+        'author': 'Dante Alighieri',
+        'country': 'Italy',
+        'imageLink': 'img/the-divine-comedy.jpg',
+        'language': 'Italian',
+        'link': 'https://en.wikipedia.org/wiki/Divine_Comedy\n',
+        'pages': 928,
+        'title': 'The Divine Comedy',
+        'year': 1315,
+        'genre': 'fantasy',
+        'price': 30
+        ,
+    },
+    {
+        'author': 'Unknown',
+        'country': 'Sumer and Akkadian Empire',
+        'imageLink': 'img/the-epic-of-gilgamesh.jpg',
+        'language': 'Akkadian',
+        'link': 'https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n',
+        'pages': 160,
+        'title': 'The Epic Of Gilgamesh',
+        'year': -1700,
+        'genre': 'fantasy'
+        , 'price': 45
+    },
+    {
+        'author': 'Unknown',
+        'country': 'Achaemenid Empire',
+        'imageLink': 'img/the-book-of-job.jpg',
+        'language': 'Hebrew',
+        'link': 'https://en.wikipedia.org/wiki/Book_of_Job\n',
+        'pages': 176,
+        'title': 'The Book Of Job',
+        'year': -600,
+        'genre': 'history'
+        , 'price': 50
+    },]
 
-// create quantityChange fun
-function quantityChange(event) {
-    //the thing that we want to do when the quantity has changed:
-    //first get quantity element
-    let inputChange = event.target;
-    //then check to see if the value that inside this input is valid value "because maybe the user delete the number that inside the input quantity or the value <=0 "
-    if (isNaN || inputChange.value <= 0) {
-        //set inputChange to be 1
-        inputChange.value = 1;
+
+// function renderItems() {
+
+//     for (let i = 0; i < books.length; i++) {
+//         let division = document.createElement('div');
+//         container.appendChild(division);
+//         let img = document.createElement('img');
+//         img.src = books[i].imageLink;
+//         division.appendChild(img);
+//         let price = document.createElement('p');
+//         division.appendChild(price);
+//         let quantityInput = document.createElement('input');
+//         quantityInput.type = 'number';
+//         quantityInput.addEventListener('input', getQuantity);
+//         quantityInput.setAttribute('min',0);
+//         division.appendChild(quantityInput);
+//         let removeButton = document.createElement('button');
+//         removeButton.addEventListener('click',remove);
+//         division.appendChild(removeButton);
+//         removeButton.textContent='remove';
+//         price.textContent = books[i].price;
+//         function getQuantity(e) {
+//             let quantity = e.target.value;
+//             // if(quantity<2||quantity==NaN||quantity==null){
+//             //     e.target.value=1;
+//             //     price.textContent=books[i].price; 
+//             // }
+//             price.textContent = books[i].price * quantity;
+//             console.log(quantity);
+//         }
+//         function remove(){
+//             division.textContent='';
+//         }
+//     }
+// }
+
+function renderTable() {
+
+    let hrow = document.createElement('tr');
+    table.appendChild(hrow);
+    let headerCell1 = document.createElement('th');
+    headerCell1.textContent = '';
+    hrow.appendChild(headerCell1);
+    let headerCell2 = document.createElement('th');
+    headerCell2.textContent = 'price';
+    hrow.appendChild(headerCell2);
+    let headerCell3 = document.createElement('th');
+    headerCell3.textContent = 'quantity';
+    hrow.appendChild(headerCell3);
+    let headerCell4 = document.createElement('th');
+    headerCell4.textContent = '';
+    hrow.appendChild(headerCell4);
+
+    let totalArr = [];
+    totalArr.length=books.length;
+    let sum = 0;
+
+    for (let i = 0; i < totalArr.length; i++) {
+
+        totalArr[i] = 0;
 
     }
-    //update the cart total
-    updateCartTotal();
-}
+    for (let i = 0; i < books.length; i++) {
+        let value;
+        let price;
+        let row = document.createElement('tr');
+        table.appendChild(row);
+        for (let j = 0; j < 4; j++) {
+            let cell = document.createElement('td');
+            row.appendChild(cell);
+            if (j == 0) {
+                let img = document.createElement('img');
+                img.src = books[i].imageLink;
+                cell.appendChild(img);
+            } else if (j == 1) {
+                price = document.createElement('p');
+                price.textContent = books[i].price;
+                cell.appendChild(price);
+            } else if (j == 2) {
+                let quantityInput = document.createElement('input');
+                quantityInput.type = 'number';
+                quantityInput.addEventListener('input', getQuantity);
+                quantityInput.setAttribute('min', 0);
+                cell.appendChild(quantityInput);
+            } else if (j == 3) {
+                let removeButton = document.createElement('button');
+                removeButton.addEventListener('click', remove);
+                removeButton.textContent = 'remove';
+                cell.appendChild(removeButton);
+            }
 
+        }
+        function getQuantity(e) {
+            let totalBookPrice = 0;
+            sum=0;
+            value=e.target.value;
+            let quantity = e.target.value;
+            price.textContent = books[i].price * quantity;
+            totalBookPrice += books[i].price * quantity;
+            totalArr[i] = totalBookPrice;
 
-//code to update the total of cart every time we remove an item from it, in order to update the total of  our cart
-function updateCartTotal() { //call this function inside the button event listener
-    //inside updateCartTotal function we want to go through every single row in our cart, we want to find the price, and we want to multiply that by the quantity, and then add that together for every single one of our rows and display it down here and our total
-    //get all of our cart rows
-    //getElementsByClassName return array of elements, we only need just one so I'll select the very first element inside that array as cartItemContaier
-    let cartItemContaier = document.getElementsByClassName('cart-items')[0];
+            for(let i=0;i<totalArr.length;i++){
+                // if(totalArr[i]==null){
+                //     totalArr[i]=0;
+                // }
+                sum+=totalArr[i];
+            }
+            footerCell4.textContent=sum;
+            console.log(totalArr);
+            console.log(sum);
 
-    //inside cartItemContaier I'll use getElementsByClassName to put the class-row  that are inside cart-Item
-    let cartRows = cartItemContaier.getElementsByClassName('cart-row');
-
-    let total = 0; //this.total=0;
-
-    //make loop to over all these different cart-row
-    for (let i = 0; i < cartRows.length; i++) {
-        //the item that we are inside of this array
-        let cartRow = cartRows[i];  //this.cartRows=cartRows[i];
-
-        //get price for the row of this cart
-        let priceElement = cartRow.getElementsByClassName('cart-price')[0];
-
-        //get quantity for the row of this cart, (quantity is input tag)
-        let quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        console.log(priceElement, quantityElement);
-
-        //get the actual information from priceElement (get the info)
-        //innerText: get the text that inside the element
-        //the price has $, to replace it to be a number without $... I'll replace $ with nothing 
-        let price = parseFloat(priceElement.innerText.replace('$', ''));
-
-        //get the actual information from quantityElement (get the info)
-        let quantity = quantityElement.value //get the value of quantity
-        // console.log(price * quantity);
-
-        //in the loop I'll total all thig together
-        total = total + (price * quantity);
+        }
+        function remove() {
+            row.textContent = '';
+            totalArr[i]=0;
+            sum=0;
+            for(let i=0;i<totalArr.length;i++){
+                // if(totalArr[i]==null){
+                //     totalArr[i]=0;
+                // }
+                sum+=totalArr[i];
+            }
+            footerCell4.textContent=sum;
+            console.log(totalArr);
+        }
     }
-    // round : is the near number
-    total = Math.round(total);
-    //after loop, I'll get element with cart total price (total all price)
-    // [0] : want the very first one
-    // innerText : set the innerText of element
-    document.getElementsByClassName('cart-total-price')[0].innerText = `$ ${total}`;
-    console.log('this is the total', total);
+
+    let brow = document.createElement('tr');
+    table.appendChild(brow);
+    let footerCell1 = document.createElement('th');
+    footerCell1.textContent = '';
+    brow.appendChild(footerCell1);
+    table.appendChild(brow);
+    let footerCell2 = document.createElement('th');
+    footerCell2.textContent = '';
+    brow.appendChild(footerCell2);
+    table.appendChild(brow);
+    let footerCell3 = document.createElement('th');
+    footerCell3.textContent = 'Total Price:';
+    brow.appendChild(footerCell3);
+    table.appendChild(brow);
+    let footerCell4 = document.createElement('th');
+    footerCell4.textContent = sum;
+    brow.appendChild(footerCell4);
 
 }
-
-// localStorage
-console.log(localStorage.setItem('here the total', 'total'));
-function updateStorage() {
-    //store the price, quantity, total, and the book name
-    localStorage.setItem('total',updateCartTotal.total);
-    localStorage.setItem('total',updateCartTotal.total);
-}
+renderTable();
