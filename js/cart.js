@@ -184,7 +184,7 @@ function renderTable() {
             footerCell4.textContent=sum;
             console.log(totalArr);
             console.log(sum);
-
+            
         }
         function remove() {
             row.textContent = '';
@@ -198,6 +198,7 @@ function renderTable() {
             }
             footerCell4.textContent=sum;
             console.log(totalArr);
+           
         }
     }
 
@@ -218,7 +219,11 @@ function renderTable() {
     let footerCell4 = document.createElement('th');
     footerCell4.textContent = sum;
     brow.appendChild(footerCell4);
-
+    
+    document.getElementById("button-a").onclick = function jsalert() {
+    
+        swal(`You are welcom any time`,`The total cost=${sum}`, "success")
+      };
 }
 
 getData();
