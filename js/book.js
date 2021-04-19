@@ -1336,14 +1336,14 @@ for (let i = 0; i < books.length; i++) {
 
   }
 
-}
+  
 const BooksCart = function (items) {
   this.cartBooks = items;
 };
 
 BooksCart.prototype.addBook = function (item) {
-  if(!this.cartBooks.includes(item)){
-  this.cartBooks.push(item);
+  if (!this.cartBooks.includes(item)) {
+    this.cartBooks.push(item);
   }
   console.log(this.cartBooks);
 };
@@ -1365,6 +1365,7 @@ function handleClickingToCart() {
   booksCart.addBook(books[index]);
   booksCart.saveToStorage();
   counter();
+  jsalert();
 }
 
 
@@ -1372,4 +1373,10 @@ function counter() {
   const booksCart = JSON.parse(localStorage.getItem('booksCart')) || [];
   let count = document.getElementById('basketCount');
   count.textContent = booksCart.length;
+}
+
+function jsalert() {
+
+  swal(`You Added ${books[i].title}`, "Check it in the baskit", "success")
+}
 }
