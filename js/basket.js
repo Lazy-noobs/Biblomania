@@ -61,7 +61,7 @@ function bookNumbers(book){
     if(bookNameNumbers){
         localStorage.setItem('bookNumbers', bookNameNumbers +1)
     }else {
-        localStorage.setItem('add-book')
+        localStorage.setItem('bookNumbers', 1)
     }
     setBooks(book);
 
@@ -97,5 +97,36 @@ function totalCost(book){
         localStorage.setItem("totalCost", booksCost+ book.price);
     }else{
         localStorage.setItem('totalCost', book.price);
+    }
+}
+
+function displayCart (){
+    let cartBooks =localStorage.getItem('booksIncart');
+    cartBooks=JSON.parse(cartBooks);
+let bookContainer =document.getElementsByClassName('books-container')
+    if (cartBooks && bookContainer ){
+        bookContainer.innerHTML= '';
+        Object.values(cartBooks).map(item=> {
+            bookContainer.innerHTML +=`
+            <div class="book-name">
+            <ion-icon name="close-circle"></ion-icon>
+            <img src="${item.imageLink}">
+
+            <span>${item.title}</span>
+            </div>
+            
+            <div class="book-price"> ${item.price}</div>
+
+            <div class="quantity"">
+            <span>${item.inCart}</span>
+            </div>
+            <div class"Total-Price">
+
+            ${item.inCart *item.price},00
+            </div>
+
+
+            `
+        })
     }
 }
