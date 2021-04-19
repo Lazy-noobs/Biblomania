@@ -22,7 +22,7 @@ let books = [
     'title': 'Fairy tales',
     'year': 1836,
     'genre': 'fantasy',
-    
+
   },
   {
     'author': 'Dante Alighieri',
@@ -1225,33 +1225,33 @@ let books = [
   }
 ];
 
-let price =[];
+let price = [];
 
-function generatePrice(){
-  let randPrice = Math.floor(Math.random() * (100 - 10) ) + 10;
-   while(randPrice%5!=0){
-     randPrice=Math.floor(Math.random() * (100 - 10) ) + 10;
-   }
-   return randPrice;
+function generatePrice() {
+  let randPrice = Math.floor(Math.random() * (100 - 10)) + 10;
+  while (randPrice % 5 != 0) {
+    randPrice = Math.floor(Math.random() * (100 - 10)) + 10;
+  }
+  return randPrice;
 };
 
-for(let i=0;i<books.length;i++){
-  price[i]=generatePrice();
+for (let i = 0; i < books.length; i++) {
+  price[i] = generatePrice();
 };
 
-function setPriceStorage(){
-  let stringArr=JSON.stringify(price);
-  if(localStorage.getItem('perminantPrice')===null){
-    localStorage.setItem('perminantPrice',stringArr);
+function setPriceStorage() {
+  let stringArr = JSON.stringify(price);
+  if (localStorage.getItem('perminantPrice') === null) {
+    localStorage.setItem('perminantPrice', stringArr);
   }
 }
 
-function getPrice(){
-  let priceData=localStorage.getItem('perminantPrice');
+function getPrice() {
+  let priceData = localStorage.getItem('perminantPrice');
   let bookPrice = JSON.parse(priceData);
-  if(bookPrice!=null){
-    for(let i=0;i<books.length;i++){
-      books[i].price=bookPrice[i];
+  if (bookPrice != null) {
+    for (let i = 0; i < books.length; i++) {
+      books[i].price = bookPrice[i];
     }
   }
 }
@@ -1263,17 +1263,66 @@ console.log(books[9].price);
 let fantasy = document.getElementById('fantasyDiv');
 let fantasyHeader = document.createElement('h2');
 fantasy.appendChild(fantasyHeader);
-fantasyHeader.textContent='fantasy';
-for(let i=0;i<books.length;i++){
-  if(books[i].genre == 'fantasy'){
+fantasyHeader.textContent = 'Fantasy';
+
+let historical = document.getElementById('historicalDiv');
+let historicalHeader = document.createElement('h2');
+historical.appendChild(historicalHeader);
+historicalHeader.textContent = 'Historical';
+
+let romance = document.getElementById('romanceDiv');
+let romanceHeader = document.createElement('h2');
+romance.appendChild(romanceHeader);
+romanceHeader.textContent = 'Romance';
+
+let scienceFiction = document.getElementById('scienceFictionDiv');
+let scienceFictionHeader = document.createElement('h2');
+scienceFiction.appendChild(scienceFictionHeader);
+scienceFictionHeader.textContent = 'Science Fiction';
+
+
+
+for (let i = 0; i < books.length; i++) {
+  if (books[i].genre == 'fantasy') {
     let fantasyBook = document.createElement('img');
-    fantasyBook.src=books[i].imageLink;
+    fantasyBook.src = books[i].imageLink;
     fantasy.appendChild(fantasyBook);
     let para = document.createElement('p');
-    para.innerHTML=`title: ${books[i].title}<br>author: ${books[i].author}<br> year: ${books[i].year}<br> price: ${books[i].price}`;
+    para.innerHTML = `title: ${books[i].title}<br>author: ${books[i].author}<br> year: ${books[i].year}<br> price: ${books[i].price}`;
     fantasy.appendChild(para);
-    let button=document.createElement('button');
-    button.textContent='add to cart';
+    let button = document.createElement('button');
+    button.textContent = 'add to cart';
     fantasy.appendChild(button);
+  } else if (books[i].genre == 'historical') {
+    let historicalBook = document.createElement('img');
+    historicalBook.src = books[i].imageLink;
+    historical.appendChild(historicalBook);
+    let para = document.createElement('p');
+    para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price:${books[i].price}`;
+    historical.appendChild(para);
+    let button = document.createElement('button');
+    button.textContent = 'add to cart';
+    historical.appendChild(button);
+  } else if (books[i].genre == 'romance') {
+    let romanceBook = document.createElement('img');
+    romanceBook.src = books[i].imageLink;
+    romance.appendChild(romanceBook);
+    let para = document.createElement('p');
+    romance.appendChild(para);
+    para.innerHTML = `titel: ${books[i].title}<br> author: ${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    let button = document.createElement('button');
+    button.textContent = 'add to cart';
+    romance.appendChild(button);
+  } else {
+    let scienceFictionBook = document.createElement('img');
+    scienceFictionBook.src = books[i].imageLink;
+    scienceFiction.appendChild(scienceFictionBook);
+    let para = document.createElement('p');
+    scienceFiction.appendChild(para)
+    para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    let button = document.createElement('button');
+    button.textContent = 'add to cart';
+    scienceFiction.appendChild(button);
   }
+
 }
