@@ -1275,10 +1275,10 @@ let romanceHeader = document.createElement('h2');
 romance.appendChild(romanceHeader);
 romanceHeader.textContent = 'Romance';
 
-let scienceFiction = document.getElementById('scienceFictionDiv');
-let scienceFictionHeader = document.createElement('h2');
+let scienceFiction=document.getElementById('scienceFictionDiv');
+let scienceFictionHeader=document.createElement('h2');
 scienceFiction.appendChild(scienceFictionHeader);
-scienceFictionHeader.textContent = 'Science Fiction';
+scienceFictionHeader.textContent='Science Fiction';
 
 
 
@@ -1309,20 +1309,19 @@ for (let i = 0; i < books.length; i++) {
     romance.appendChild(romanceBook);
     let para = document.createElement('p');
     romance.appendChild(para);
-    para.innerHTML = `titel: ${books[i].title}<br> author: ${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
-    let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    para.innerHTML=`titel: ${books[i].title}<br> author: ${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    let button=document.createElement('button');
+    button.textContent='add to cart';
     romance.appendChild(button);
-  } else {
-    let scienceFictionBook = document.createElement('img');
-    scienceFictionBook.src = books[i].imageLink;
+  }else{
+    let scienceFictionBook =document.createElement('img');
+    scienceFictionBook.src=books[i].imageLink;
     scienceFiction.appendChild(scienceFictionBook);
-    let para = document.createElement('p');
-    scienceFiction.appendChild(para)
-    para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
-    let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    let para=document.createElement('p');
+    scienceFiction.appendChild(para);
+    para.innerHTML=`title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    let button=document.createElement('button');
+    button.textContent='add to cart';
     scienceFiction.appendChild(button);
   }
-
 }
