@@ -1259,3 +1259,21 @@ setPriceStorage();
 getPrice();
 
 console.log(books[9].price);
+
+let fantasy = document.getElementById('fantasyDiv');
+let fantasyHeader = document.createElement('h2');
+fantasy.appendChild(fantasyHeader);
+fantasyHeader.textContent='fantasy';
+for(let i=0;i<books.length;i++){
+  if(books[i].genre == 'fantasy'){
+    let fantasyBook = document.createElement('img');
+    fantasyBook.src=books[i].imageLink;
+    fantasy.appendChild(fantasyBook);
+    let para = document.createElement('p');
+    para.innerHTML=`title: ${books[i].title}<br>author: ${books[i].author}<br> year: ${books[i].year}<br> price: ${books[i].price}`;
+    fantasy.appendChild(para);
+    let button=document.createElement('button');
+    button.textContent='add to cart';
+    fantasy.appendChild(button);
+  }
+}
