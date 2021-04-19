@@ -70,9 +70,9 @@
                     <br> -->
                 <br>
                 <br>
-                <Label for="bookname" class="field">
+                <Label for="bookname" class="field"> Book title
                     <input type="text" id="bookname" name="bookname" required>
-                    <span class="placeholder">Enter book title</span>
+                    <!-- <span class="placeholder">Enter book title</span> -->
                 </Label>
                 <br>
                 <br>
@@ -83,15 +83,14 @@
                 <br>
 
                 <Label for="comment" class="field">I think you would like this book because : </Label>
-                <textarea>
-                    </textarea>
-                <!-- <input type="text" id="author" name="author" required> -->
+                <br>
+                <input type="text" id="comment" name="comment" required>
                 <br>
                 <br>
 
                 <Label for="rating" id="ratingTag"> Star Rating: </Label>
                 <div class="rating">
-                    <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                    <input id="star5" name="star" type="radio" value="5" class="radio-btn hide"  />
                     <label for="star5">☆</label>
                     <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
                     <label for="star4">☆</label>
@@ -106,19 +105,14 @@
                 <br>
                 <br>
 
-                <Label for="image" class="field">image : </Label>
-                <br>
-                <input type="file" id="image" name="image">
-                <br>
-                <br>
-
-                <Label for="name" class="field">Recommended by : </Label>
-                <input type="text" id="name" name="name" required>
+                <Label for="username" class="field">Comment by : </Label>
+                <input type="text" id="username" name="username" required>
                 <br>
                 <input type="Submit">
 
             </fieldset>
         </form>
+
         <section id="blogSection">
 
         </section>
@@ -129,6 +123,7 @@
     </section>
     <footer>
         Footer
+        ddd
         <!-- <script src="js/blog.js"></script> -->
     </footer>
 
