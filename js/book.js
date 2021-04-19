@@ -1361,8 +1361,9 @@ function handleClickingToCart() {
   let index = parseInt(event.target.id);
   booksCart.addBook(books[index]);
   booksCart.saveToStorage();
+  counter();
 }
-counter();
+
 
 function counter() {
   const booksCart = JSON.parse(localStorage.getItem('booksCart')) || [];
