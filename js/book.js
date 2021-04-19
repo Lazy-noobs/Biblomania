@@ -1342,7 +1342,10 @@ const BooksCart = function (items) {
 };
 
 BooksCart.prototype.addBook = function (item) {
+  if(!this.cartBooks.includes(item)){
   this.cartBooks.push(item);
+  }
+  console.log(this.cartBooks);
 };
 
 BooksCart.prototype.saveToStorage = function () {
