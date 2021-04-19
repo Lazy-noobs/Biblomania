@@ -10,7 +10,7 @@ let books = [
     'title': 'Things Fall Apart',
     'year': 1958,
     'genre': 'fantasy'
-    ,'price': ' 95JD '
+    ,
   },
   {
     'author': 'Hans Christian Andersen',
@@ -22,7 +22,7 @@ let books = [
     'title': 'Fairy tales',
     'year': 1836,
     'genre': 'fantasy',
-    'price':'40JD'
+    
   },
   {
     'author': 'Dante Alighieri',
@@ -34,7 +34,7 @@ let books = [
     'title': 'The Divine Comedy',
     'year': 1315,
     'genre': 'fantasy'
-    ,'price':'40JD'
+    ,
   },
   {
     'author': 'Unknown',
@@ -46,7 +46,7 @@ let books = [
     'title': 'The Epic Of Gilgamesh',
     'year': -1700,
     'genre': 'fantasy'
-    ,'price':'40JD'
+    ,
   },
   {
     'author': 'Unknown',
@@ -58,7 +58,7 @@ let books = [
     'title': 'The Book Of Job',
     'year': -600,
     'genre': 'history'
-    ,'price':'200JD'
+    ,
   },
   {
     'author': 'Unknown',
@@ -70,7 +70,7 @@ let books = [
     'title': 'One Thousand and One Nights',
     'year': 1200,
     'genre': 'fantasy'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Unknown',
@@ -82,7 +82,7 @@ let books = [
     'title': 'Nj\u00e1l\'s Saga',
     'year': 1350,
     'genre': 'historical'
-    ,'price':'200JD'
+    ,
   },
   {
     'author': 'Jane Austen',
@@ -94,7 +94,7 @@ let books = [
     'title': 'Pride and Prejudice',
     'year': 1813,
     'genre': 'romance'
-    ,'price':'150JD'
+    ,
   },
   {
     'author': 'Honor\u00e9 de Balzac',
@@ -106,7 +106,7 @@ let books = [
     'title': 'Le P\u00e8re Goriot',
     'year': 1835,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Samuel Beckett',
@@ -118,7 +118,7 @@ let books = [
     'title': 'Molloy, Malone Dies, The Unnamable, the trilogy',
     'year': 1952,
     'genre': 'historical'
-    ,'price':' 60JD '
+    ,
   },
   {
     'author': 'Giovanni Boccaccio',
@@ -130,7 +130,7 @@ let books = [
     'title': 'The Decameron',
     'year': 1351,
     'genre': 'fantasy'
-    ,'price': ' 95JD '
+    ,
   },
   {
     'author': 'Jorge Luis Borges',
@@ -142,7 +142,7 @@ let books = [
     'title': 'Ficciones',
     'year': 1965,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Emily Bront\u00eb',
@@ -154,7 +154,7 @@ let books = [
     'title': 'Wuthering Heights',
     'year': 1847,
     'genre': 'fantasy'
-    ,'price':'40JD'
+    ,
   },
   {
     'author': 'Albert Camus',
@@ -166,7 +166,7 @@ let books = [
     'title': 'The Stranger',
     'year': 1942,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Paul Celan',
@@ -178,7 +178,7 @@ let books = [
     'title': 'Poems',
     'year': 1952,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Louis-Ferdinand C\u00e9line',
@@ -190,7 +190,7 @@ let books = [
     'title': 'Journey to the End of the Night',
     'year': 1932,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Miguel de Cervantes',
@@ -202,7 +202,7 @@ let books = [
     'title': 'Don Quijote De La Mancha',
     'year': 1610,
     'genre': 'science fictions'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Geoffrey Chaucer',
@@ -213,7 +213,7 @@ let books = [
     'pages': 544,
     'title': 'The Canterbury Tales',
     'year': 1450,
-    'genre': 'fantasy'
+    'genre': 'fantasy',
   },
   {
     'author': 'Anton Chekhov',
@@ -225,7 +225,7 @@ let books = [
     'title': 'Stories',
     'year': 1886,
     'genre': 'fantasy'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Joseph Conrad',
@@ -237,7 +237,7 @@ let books = [
     'title': 'Nostromo',
     'year': 1904,
     'genre': 'historical'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Charles Dickens',
@@ -249,7 +249,7 @@ let books = [
     'title': 'Great Expectations',
     'year': 1861,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Denis Diderot',
@@ -261,7 +261,7 @@ let books = [
     'title': 'Jacques the Fatalist',
     'year': 1796,
     'genre': 'fantasy'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Alfred D\u00f6blin',
@@ -273,7 +273,7 @@ let books = [
     'title': 'Berlin Alexanderplatz',
     'year': 1929,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Fyodor Dostoevsky',
@@ -285,7 +285,7 @@ let books = [
     'title': 'Crime and Punishment',
     'year': 1866,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Fyodor Dostoevsky',
@@ -297,7 +297,7 @@ let books = [
     'title': 'The Idiot',
     'year': 1869,
     'genre': 'fantasy'
-    ,'price':'20JD'
+    ,
   },
   {
     'author': 'Fyodor Dostoevsky',
@@ -309,7 +309,7 @@ let books = [
     'title': 'The Possessed',
     'year': 1872,
     'genre': 'historical'
-    ,'price':'40JD'
+    ,
   },
   {
     'author': 'Fyodor Dostoevsky',
@@ -321,7 +321,7 @@ let books = [
     'title': 'The Brothers Karamazov',
     'year': 1880,
     'genre': 'historical'
-    ,'price': ' 95JD '
+    ,
   },
   {
     'author': 'George Eliot',
@@ -333,7 +333,7 @@ let books = [
     'title': 'Middlemarch',
     'year': 1871,
     'genre': 'historical'
-    ,'price': '100JD '
+    ,
   },
   {
     'author': 'Ralph Ellison',
@@ -345,7 +345,7 @@ let books = [
     'title': 'Invisible Man',
     'year': 1952,
     'genre': 'historical'
-    ,'price':'200JD'
+    ,
   },
   {
     'author': 'Euripides',
@@ -357,7 +357,7 @@ let books = [
     'title': 'Medea',
     'year': -431,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'William Faulkner',
@@ -369,7 +369,7 @@ let books = [
     'title': 'Absalom, Absalom!',
     'year': 1936,
     'genre': 'fantasy'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'William Faulkner',
@@ -381,7 +381,7 @@ let books = [
     'title': 'The Sound and the Fury',
     'year': 1929,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Gustave Flaubert',
@@ -393,7 +393,7 @@ let books = [
     'title': 'Madame Bovary',
     'year': 1857,
     'genre': 'fantasy'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Gustave Flaubert',
@@ -405,7 +405,7 @@ let books = [
     'title': 'Sentimental Education',
     'year': 1869,
     'genre': 'historical'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Federico Garc\u00eda Lorca',
@@ -417,7 +417,7 @@ let books = [
     'title': 'Gypsy Ballads',
     'year': 1928,
     'genre': 'historical'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Gabriel Garc\u00eda M\u00e1rquez',
@@ -429,7 +429,7 @@ let books = [
     'title': 'One Hundred Years of Solitude',
     'year': 1967,
     'genre': 'science fiction'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Gabriel Garc\u00eda M\u00e1rquez',
@@ -453,7 +453,7 @@ let books = [
     'title': 'Faust',
     'year': 1832,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Nikolai Gogol',
@@ -465,7 +465,7 @@ let books = [
     'title': 'Dead Souls',
     'year': 1842,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'G\u00fcnter Grass',
@@ -477,7 +477,7 @@ let books = [
     'title': 'The Tin Drum',
     'year': 1959,
     'genre': 'science fiction'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -490,7 +490,7 @@ let books = [
     'title': 'The Devil to Pay in the Backlands',
     'year': 1956,
     'genre': 'science fiction'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Knut Hamsun',
@@ -502,7 +502,7 @@ let books = [
     'title': 'Hunger',
     'year': 1890,
     'genre': 'fantasy'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Ernest Hemingway',
@@ -514,7 +514,7 @@ let books = [
     'title': 'The Old Man and the Sea',
     'year': 1952,
     'genre': 'science fiction'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -538,7 +538,7 @@ let books = [
     'title': 'Odyssey',
     'year': -800,
     'genre': 'romance'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Henrik Ibsen',
@@ -550,7 +550,7 @@ let books = [
     'title': 'A Doll\'s House',
     'year': 1879,
     'genre': 'romance'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'James Joyce',
@@ -562,7 +562,7 @@ let books = [
     'title': 'Ulysses',
     'year': 1922,
     'genre': 'historical'
-    ,'price':' 80JD '
+    ,
   },
   {
     'author': 'Franz Kafka',
@@ -574,7 +574,7 @@ let books = [
     'title': 'Stories',
     'year': 1924,
     'genre': 'romance'
-    ,'price':'40JD'
+    ,
   },
   {
     'author': 'Franz Kafka',
@@ -587,7 +587,7 @@ let books = [
     'year': 1925,
 
     'genre': 'science fiction'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -600,7 +600,7 @@ let books = [
     'title': 'The Castle',
     'year': 1926,
     'genre': 'science fiction'
-    ,'price': ' 95JD '
+    ,
 
 
   },
@@ -614,7 +614,7 @@ let books = [
     'title': 'The recognition of Shakuntala',
     'year': 150,
     'genre': 'romance'
-    ,'price': ' 95JD '
+    ,
 
   },
   {
@@ -627,7 +627,7 @@ let books = [
     'title': 'The Sound of the Mountain',
     'year': 1954,
     'genre': 'romance'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Nikos Kazantzakis',
@@ -639,7 +639,7 @@ let books = [
     'title': 'Zorba the Greek',
     'year': 1946,
     'genre': 'fantasy'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'D. H. Lawrence',
@@ -651,7 +651,7 @@ let books = [
     'title': 'Sons and Lovers',
     'year': 1913,
     'genre': 'romance'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Halld\u00f3r Laxness',
@@ -663,7 +663,7 @@ let books = [
     'title': 'Independent People',
     'year': 1934,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Giacomo Leopardi',
@@ -675,7 +675,7 @@ let books = [
     'title': 'Poems',
     'year': 1818,
     'genre': 'romance'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Doris Lessing',
@@ -687,7 +687,7 @@ let books = [
     'title': 'The Golden Notebook',
     'year': 1962,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
 
   },
   {
@@ -700,7 +700,7 @@ let books = [
     'title': 'Pippi Longstocking',
     'year': 1945,
     'genre': 'fantasy'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -713,7 +713,7 @@ let books = [
     'title': 'Diary of a Madman',
     'year': 1918,
     'genre': 'historical'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -726,7 +726,7 @@ let books = [
     'title': 'Children of Gebelawi',
     'year': 1959,
     'genre': 'romance'
-    ,'price':' 80JD '
+    ,
 
   },
   {
@@ -739,7 +739,7 @@ let books = [
     'title': 'Buddenbrooks',
     'year': 1901,
     'genre': 'historical'
-    ,'price':' 80JD '
+    ,
 
   },
   {
@@ -752,7 +752,7 @@ let books = [
     'title': 'The Magic Mountain',
     'year': 1924,
     'genre': 'historical'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -765,7 +765,7 @@ let books = [
     'title': 'Moby Dick',
     'year': 1851,
     'genre': 'romance'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -777,7 +777,7 @@ let books = [
     'pages': 404,
     'title': 'Essays',
     'year': 1595,
-    'genre': 'science fiction'
+    'genre': 'science fiction',
 
 
   },
@@ -791,7 +791,7 @@ let books = [
     'title': 'History',
     'year': 1974,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Toni Morrison',
@@ -803,7 +803,7 @@ let books = [
     'title': 'Beloved',
     'year': 1987,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -816,7 +816,7 @@ let books = [
     'title': 'The Tale of Genji',
     'year': 1006,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
 
   },
   {
@@ -829,7 +829,7 @@ let books = [
     'title': 'The Man Without Qualities',
     'year': 1931,
     'genre': 'fantasy'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -842,7 +842,7 @@ let books = [
     'title': 'Lolita',
     'year': 1955,
     'genre': 'romance'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -856,7 +856,7 @@ let books = [
     'year': 1949,
 
     'genre': 'science fiction'
-    ,'price':'40JD'
+    ,
 
   },
   {
@@ -869,7 +869,7 @@ let books = [
     'title': 'Metamorphoses',
     'year': 100,
     'genre': 'romance'
-    ,'price':'50JD'
+    ,
 
   },
   {
@@ -882,7 +882,7 @@ let books = [
     'title': 'The Book of Disquiet',
     'year': 1928,
     'genre': 'fantasy'
-    ,'price':'35JD'
+    ,
 
   },
 
@@ -896,7 +896,7 @@ let books = [
     'title': 'Tales',
     'year': 1950,
     'genre': 'fantasy'
-    ,'price':'200JD'
+    ,
   },
   {
     'author': 'Marcel Proust',
@@ -908,7 +908,7 @@ let books = [
     'title': 'In Search of Lost Time',
     'year': 1920,
     'genre': 'historical'
-    ,'price':'200JD'
+    ,
   },
   {
     'author': 'Fran\u00e7ois Rabelais',
@@ -920,7 +920,7 @@ let books = [
     'title': 'Gargantua and Pantagruel',
     'year': 1533,
     'genre': 'fantasy'
-    ,'price':'95JD'
+    ,
   },
   {
     'author': 'Juan Rulfo',
@@ -932,7 +932,7 @@ let books = [
     'title': 'Pedro P\u00e1ramo',
     'year': 1955,
     'genre': 'science fiction'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Rumi',
@@ -944,7 +944,7 @@ let books = [
     'title': 'The Masnavi',
     'year': 1236,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Salman Rushdie',
@@ -956,7 +956,7 @@ let books = [
     'title': 'Midnight\'s Children',
     'year': 1981,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Saadi',
@@ -968,7 +968,7 @@ let books = [
     'title': 'Bostan',
     'year': 1257,
     'genre': 'romance'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Tayeb Salih',
@@ -980,7 +980,7 @@ let books = [
     'title': 'Season of Migration to the North',
     'year': 1966,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Jos\u00e9 Saramago',
@@ -992,7 +992,7 @@ let books = [
     'title': 'Blindness',
     'year': 1995,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'William Shakespeare',
@@ -1004,7 +1004,7 @@ let books = [
     'title': 'Hamlet',
     'year': 1603,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'William Shakespeare',
@@ -1016,7 +1016,7 @@ let books = [
     'title': 'King Lear',
     'year': 1608,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
 
   },
   {
@@ -1029,7 +1029,7 @@ let books = [
     'title': 'Othello',
     'year': 1609,
     'genre': 'historical'
-    ,'price':'50JD'
+    ,
   },
   {
     'author': 'Sophocles',
@@ -1041,7 +1041,7 @@ let books = [
     'title': 'Oedipus the King',
     'year': -430,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Stendhal',
@@ -1053,7 +1053,7 @@ let books = [
     'title': 'The Red and the Black',
     'year': 1830,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Laurence Sterne',
@@ -1065,7 +1065,7 @@ let books = [
     'title': 'The Life And Opinions of Tristram Shandy',
     'year': 1760,
     'genre': 'historical'
-    ,'price':'95JD'
+    ,
   },
   {
     'author': 'Italo Svevo',
@@ -1077,7 +1077,7 @@ let books = [
     'title': 'Confessions of Zeno',
     'year': 1923,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Jonathan Swift',
@@ -1089,7 +1089,7 @@ let books = [
     'title': 'Gulliver\'s Travels',
     'year': 1726,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Leo Tolstoy',
@@ -1101,7 +1101,7 @@ let books = [
     'title': 'War and Peace',
     'year': 1867,
     'genre': 'historical'
-    ,'price':'150JD'
+    ,
   },
   {
     'author': 'Leo Tolstoy',
@@ -1113,7 +1113,7 @@ let books = [
     'title': 'Anna Karenina',
     'year': 1877,
     'genre': 'historical'
-    ,'price':'150JD'
+    ,
   },
   {
     'author': 'Leo Tolstoy',
@@ -1125,7 +1125,7 @@ let books = [
     'title': 'The Death of Ivan Ilyich',
     'year': 1886,
     'genre': 'historical'
-    ,'price':'5JD'
+    ,
   },
   {
     'author': 'Mark Twain',
@@ -1137,7 +1137,7 @@ let books = [
     'title': 'The Adventures of Huckleberry Finn',
     'year': 1884,
     'genre': 'historical'
-    ,'price':'5JD'
+    ,
   },
   {
     'author': 'Valmiki',
@@ -1149,7 +1149,7 @@ let books = [
     'title': 'Ramayana',
     'year': -450,
     'genre': 'historical'
-    ,'price':'5JD'
+    ,
   },
   {
     'author': 'Virgil',
@@ -1161,7 +1161,7 @@ let books = [
     'title': 'The Aeneid',
     'year': -23,
     'genre': 'historical'
-    ,'price':'5JD'
+    ,
   },
   {
     'author': 'Vyasa',
@@ -1173,7 +1173,7 @@ let books = [
     'title': 'Mahabharata',
     'year': -700,
     'genre': 'historical'
-    ,'price':'5JD'
+    ,
   },
   {
     'author': 'Walt Whitman',
@@ -1185,7 +1185,7 @@ let books = [
     'title': 'Leaves of Grass',
     'year': 1855,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Virginia Woolf',
@@ -1197,7 +1197,7 @@ let books = [
     'title': 'Mrs Dalloway',
     'year': 1925,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Virginia Woolf',
@@ -1209,7 +1209,7 @@ let books = [
     'title': 'To the Lighthouse',
     'year': 1927,
     'genre': 'historical'
-    ,'price':'35JD'
+    ,
   },
   {
     'author': 'Marguerite Yourcenar',
@@ -1221,7 +1221,41 @@ let books = [
     'title': 'Memoirs of Hadrian',
     'year': 1951,
     'genre': 'historical'
-    ,'price':' 60JD '
+    ,
   }
 ];
-console.log(books[0].author);
+
+let price =[];
+
+function generatePrice(){
+  let randPrice = Math.floor(Math.random() * (100 - 10) ) + 10;
+   while(randPrice%5!=0){
+     randPrice=Math.floor(Math.random() * (100 - 10) ) + 10;
+   }
+   return randPrice;
+};
+
+for(let i=0;i<books.length;i++){
+  price[i]=generatePrice();
+};
+
+function setPriceStorage(){
+  let stringArr=JSON.stringify(price);
+  if(localStorage.getItem('perminantPrice')===null){
+    localStorage.setItem('perminantPrice',stringArr);
+  }
+}
+
+function getPrice(){
+  let priceData=localStorage.getItem('perminantPrice');
+  let bookPrice = JSON.parse(priceData);
+  if(bookPrice!=null){
+    for(let i=0;i<books.length;i++){
+      books[i].price=bookPrice[i];
+    }
+  }
+}
+setPriceStorage();
+getPrice();
+
+console.log(books[9].price);
