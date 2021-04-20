@@ -1,3 +1,29 @@
+
+
+/* the slider*/
+
+#slider{
+    width:80%;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+  justify-content: center;
+} 
+
+.pic {
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  
 *{
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
@@ -105,3 +131,4 @@ footer .list ul li a:hover{
 #Opening{
     text-align:left;
 }
+
