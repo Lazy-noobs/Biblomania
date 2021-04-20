@@ -1,4 +1,3 @@
-
 /* the slider*/
 
 #slider{
@@ -23,3 +22,111 @@
   }
   
   
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+background-color: #eee2dc;
+}
+
+header {
+background-color: #f4eee8;
+width: 100%;
+padding: 20px;
+height: 100px;
+
+}  
+.site-logo {
+    width: 50px;
+    height: 70px;
+    /* float: left; */
+display: inline-block;
+vertical-align: middle;
+line-height: 20px;
+}
+
+body header h1{
+    color:#ac3b61 ;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: 0px;
+    vertical-align: middle;
+    line-height: 50px;
+}
+header nav{
+    float: right;
+    padding-left: 20px;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#123c69;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+}
+header nav ul li a:hover{
+color: #ca8a8b;
+}
+
+footer{
+    clear: both;
+    width: 1500px;
+    height: 200px;
+    text-align:end;
+    background-color:#f4eee8 ;
+    color: #ac3b61 ;
+    padding: 50px;
+    padding-top: 0px;
+}
+#icons img {
+    width: auto;
+    height: auto;
+    float: right;
+    border: 0px solid;
+    padding-right: 20px;
+    padding-top: 20px;
+ }
+
+footer .list{
+    float: left;
+    font-weight: bold;
+    display: block;
+    padding-top: 0px;
+}
+footer .list ul h2{
+   color: #ac3b61 ;
+   padding-bottom: 5px;
+   padding-left: 10px; 
+}
+footer .list ul li{
+    display: table;
+    padding-left: 20px;
+}
+footer .list ul li p{
+    color: #123c69;
+}
+footer .list ul li a{
+    text-decoration: none;
+    color: #123c69;
+}
+footer .list ul li a:hover{
+    color: #ca8a8b;
+}
+#Location{
+    text-align:left;
+}
+#Contact{
+    text-align:left;
+}
+#Opening{
+    text-align:left;
+}
+
