@@ -58,17 +58,21 @@ function submitter(event) {
   let section = document.getElementById('blogSection');
   let divElement = document.createElement('div');
   section.appendChild(divElement);
+  divElement.setAttribute('id', "blogComments")
   let name = document.createElement('p');
   divElement.appendChild(name);
-  name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName} by ${allBlogs[i].author}`;
+  name.setAttribute('id', "name")
+  name.textContent = `${allBlogs[i].name} rates "${allBlogs[i].bookName}" by ${allBlogs[i].author}`;
 
   let rating = document.createElement('p');
   divElement.appendChild(rating);
-  rating.textContent   = `Book rating : ${allBlogs[i].rating} `;
+  rating.textContent   = `Book rating : ${allBlogs[i].rating} stars`;
+  rating.setAttribute('id', "rating")
 
   let comment = document.createElement('p');
   divElement.appendChild(comment);
-  comment.textContent = allBlogs[i].comment;
+  comment.textContent = `"${allBlogs[i].comment}"`;
+  comment.setAttribute('id','comment')
 
 }
 
@@ -78,17 +82,21 @@ function render() {
   for (let i = 0; i < allBlogs.length; i++) {
     let divElement = document.createElement('div');
     section.appendChild(divElement);
+    divElement.setAttribute('id', "blogComments")
     let name = document.createElement('p');
     divElement.appendChild(name);
-    name.textContent = `${allBlogs[i].name} rates ${allBlogs[i].bookName} by ${allBlogs[i].author}`;
+    name.setAttribute('id', "name")
+    name.textContent = `${allBlogs[i].name} rates "${allBlogs[i].bookName}" by ${allBlogs[i].author}`;
 
     let rating = document.createElement('p');
     divElement.appendChild(rating);
-    rating.textContent   = `Book rating : ${allBlogs[i].rating} `;
+    rating.textContent   = `Book rating : ${allBlogs[i].rating} stars`;
+    rating.setAttribute('id', "rating")
 
     let comment = document.createElement('p');
     divElement.appendChild(comment);
-    comment.textContent = allBlogs[i].comment;
+    comment.textContent = `"${allBlogs[i].comment}"`;
+    comment.setAttribute('id','comment')
 
   };
 
