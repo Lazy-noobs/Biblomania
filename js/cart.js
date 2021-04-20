@@ -220,9 +220,13 @@ function renderTable() {
     footerCell4.textContent = sum;
     brow.appendChild(footerCell4);
     
-    document.getElementById("button-a").onclick = function jsalert() {
-    
-        swal(`You are welcom any time`,`The total cost=${sum}`, "success")
+    let button =document.getElementById("button-a");
+    button.onclick = function jsalert() {
+        if(sum!=0){
+        swal(`You are welcom any time`,`The total cost=${sum}`, "success");
+        localStorage.removeItem('booksCart');
+        button.style.display='none';
+        }
       };
 }
 
