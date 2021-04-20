@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-font-family: "Sofia", sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -51,24 +51,56 @@ header nav ul li a:hover{
 color: #ca8a8b;
 }
 
-footer a{
-
-color: black;
-text-decoration: none;
-font-size: 25px;
-font-weight: bold;
-font-style: oblique;   
-
+footer{
+    clear: both;
+    width: 1500px;
+    height: 200px;
+    text-align:end;
+    background-color:#f4eee8 ;
+    color: #ac3b61 ;
+    padding: 50px;
+    padding-top: 0px;
 }
-footer ul{
-color: black;
-padding: 20px 20px;
-text-decoration: none;
-font-size: 25px;
-margin-left: 30px;
-font-weight: bold;
-font-style: oblique;
-font-size: medium;    
-float: left;  
+#icons img {
+    width: auto;
+    height: auto;
+    float: right;
+    border: 0px solid;
+    padding-right: 20px;
+    padding-top: 20px;
+ }
 
+footer .list{
+    float: left;
+    font-weight: bold;
+    display: block;
+    padding-top: 0px;
+}
+footer .list ul h2{
+   color: #ac3b61 ;
+   padding-bottom: 5px;
+   padding-left: 10px; 
+}
+footer .list ul li{
+    display: table;
+    padding-left: 20px;
+}
+footer .list ul li p{
+    color: #123c69;
+}
+footer .list ul li a{
+    text-decoration: none;
+    color: #123c69;
+}
+footer .list ul li a:hover{
+    color: #ca8a8b;
+}
+#Location{
+    text-align:left;
+}
+#Contact{
+    text-align:left;
+}
+#Opening{
+    text-align:left;
 }
