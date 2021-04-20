@@ -1,13 +1,13 @@
+/* this is heba's work */
 *{
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
 
-body {
-background-color: #eee2dc;
-}
+
 
 header {
+    position: relative;
 background-color: #f4eee8;
 width: 100%;
 padding: 20px;
@@ -17,13 +17,16 @@ height: 100px;
 .site-logo {
     width: 50px;
     height: 70px;
-    /* float: left; */
-display: inline-block;
+    float: left;
+
+
 vertical-align: middle;
 line-height: 20px;
 }
 
 body header h1{
+    position: absolute;
+    left:60px;
     color:#ac3b61 ;
     font-weight: bold;
     display: inline-block;
@@ -103,4 +106,80 @@ footer .list ul li a:hover{
 }
 #Opening{
     text-align:left;
+}
+
+
+
+
+
+
+/* this is saeed's work */
+body{
+    background-color:#EEE2DC;
+    text-align: center;
+}
+body main{
+    clear: both;
+}
+.besties{
+ 
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: blur(7px);
+    transition-duration:0.5s ;
+}
+.besties:hover{
+    filter: none;
+}
+
+#bestSeller{
+    text-align: center;
+    display: inline-block;
+    height: 350px;
+    width: 60%;
+    perspective: 800px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.imgContainer{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    transition-duration:0.5s ;
+    
+}
+#bestSeller:hover .imgContainer{
+    transform: rotateY(30deg);
+}
+#bestSeller .imgContainer:hover{
+    transform: rotateY(0deg);
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.8);
+
+}
+#bestSeller .imgContainer:hover ~ .imgContainer{
+    transform: rotateY(-30deg);
+}
+
+.mainBranch{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.branch{
+    margin-top:10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 300px;
+    width: 250px;
+}
+.loc{
+    border-radius: 50px;
+    width: 100%;
+    height:100%;
 }
