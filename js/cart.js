@@ -161,7 +161,7 @@ function renderTable() {
             } else if (j == 3) {
                 let removeButton = document.createElement('button');
                 removeButton.addEventListener('click', remove);
-                removeButton.textContent = 'remove';
+                removeButton.textContent = 'REMOVE';
                 cell.appendChild(removeButton);
             }
 
