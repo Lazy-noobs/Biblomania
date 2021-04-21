@@ -237,3 +237,7 @@ body main{
 h2, h3{
     color: #123c69;
 }
+
+#siteIntro p{
+    text-align: justify;
+}
