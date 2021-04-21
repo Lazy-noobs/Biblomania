@@ -9,8 +9,12 @@
 
 
 body{
-    background-color: #EEE2DC;
+    background-color:#f5f1ee;
+    text-align: center;
+    margin: 0;
+    min-width: 1000px;
 }
+
 img{
     width : 80%;
     height: 80%;
@@ -97,7 +101,7 @@ button{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
-}
+
 
 #button-a:hover{
     box-shadow: 0 5px 50px #ce228c inset, 0 5px;
@@ -115,9 +119,9 @@ height: 100px;
 background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, rgb(9, 201, 186),rgb(0,86,145));
 
 }  
-.site-logo {
+.site-logo img{
     width: 50px;
-    height: 70px;
+    height: 50px;
     float: left;
 vertical-align: middle;
 line-height: 20px;
