@@ -1,8 +1,4 @@
 
-/* this is heba's work */
-
-
-
 /* the slider*/
 
 #slider{
@@ -11,6 +7,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+
+    display: flex;
+  justify-content: center;
+
     margin-top:40px;
     margin-bottom: 60px;
     display: flex;
@@ -143,11 +144,6 @@ footer .list ul li a:hover{
 #Opening{
     text-align:left;
 }
-
-
-
-
-
 
 
 /* this is saeed's work */
