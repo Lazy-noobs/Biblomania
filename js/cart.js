@@ -226,6 +226,7 @@ function renderTable() {
         swal(`You are welcom any time`,`The total cost=${sum}`, "success");
         localStorage.removeItem('booksCart');
         button.style.display='none';
+        table.style.display='none';
         }
       };
 }
