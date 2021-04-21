@@ -2,129 +2,134 @@
 <html lang="en">
 
 <head>
-    <title>Blog page</title>
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+  <title>Blog page</title>
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="site-logo">
-          <img src="img/b.png" alt="logo" width="50px" />
-        </div>
-    
-    
-        <h1>iblomania</h1>
-    
-    
-    
-        <nav>
-          <ul>
-    
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Books.html">Books</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="cart.html">Cart <span id="basketCount"></span></a> </li>
-            <li><a href="about.html">About us</a></li>
-    
-          </ul>
-        </nav>
-    
-    </header>
-    
-    <main>
-        <div class="row">
-            <div class="left-column">
-                <h1>Our Blog</h1>
-                <div class="section-form">
-                    <form action="" id="booksform" method="post" action="#">
-                        <div class="intro"> 
-                            <h2>Book Review</h2>
-                        </div>
+  <header>
+    <div class="site-logo">
+      <img src="img/b.png" alt="logo" width="50px" />
+    </div>
 
-                            <input type="text" id="bookname" name="bookname" placeholder="Book name" tabindex="1" required>
-                            <input type="text" id="author" name="author" placeholder="Author" tabindex="2" required>
-                            <input type="text" id="username" name="username" placeholder="Username" tabindex="3" required>
-                            <Label for="rating" id="ratingTag"> Star Rating: </Label>
-                            <div class="rating">
-                                <input id="star5" name="star" type="radio" value="5" class="radio-btn hide"  />
-                                <label for="star5">☆</label>
-                                <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
-                                <label for="star4">☆</label>
-                                <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
-                                <label for="star3">☆</label>
-                                <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
-                                <label for="star2">☆</label>
-                                <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
-                                <label for="star1">☆</label>
-                                <div class="clear"></div>
-                            </div>
-                            <br>
-                            <input type="text" id="comment" name="comment" placeholder="Comment" tabindex="3" required>
-                            <br>
-                            <input type="Submit" id="submit">
-                    </form>
-                </div>
-                    
-                <h2 id= "underline">Comment section</h2>
-                <section id="blogSection">
-                
-                </section>
-            </div>
-            <div class="right-column">
-                <div class="card">
-                    <h2>Popular Books</h2>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/51baoEVDKJL._SX327_BO1,204,203,200_.jpg" alt="popular">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51K84pomCRL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="popular">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/LordOfTheFliesBookCover.jpg/220px-LordOfTheFliesBookCover.jpg" alt="popular">
-                </div>
-            </div>
-        </div>
-    </main>
-    <section>
-        <script src="js/blog.js"></script>
-    </section>
-    <footer>
 
-        <div class="list">
-          <ul>
-            <h2 id="Contact">Contact Us</h2>
-            <li><a href="complaints@ltuc.com">LTUC</a></li>
-            <li><a href="tel:+962(6)4000700">+962(6)4000700</a></li>
-            <li><a href="mailto:hege@example.com">hege@example.com</a></li>
-            <li><a href="tel:+18009932665">(800) 993-2665</a></li>
-          </ul>
+    <h1>iblomania</h1>
+
+
+
+    <nav>
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Books.html">Books</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cart.html">Cart <span id="basketCount"></span></a> </li>
+        <li><a href="about.html">About us</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="left-column">
+        <h1>Our Blog</h1>
+        <div class="section-form">
+          <form action="" id="booksform" method="post" action="#">
+            <div class="intro">
+              <h2>Book Review</h2>
+            </div>
+
+            <input type="text" id="bookname" name="bookname" placeholder="Book name" tabindex="1" required>
+            <input type="text" id="author" name="author" placeholder="Author" tabindex="2" required>
+            <input type="text" id="username" name="username" placeholder="Username" tabindex="3" required>
+            <Label for="rating" id="ratingTag"> Star Rating: </Label>
+            <div class="rating">
+              <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+              <label for="star5">☆</label>
+              <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+              <label for="star4">☆</label>
+              <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+              <label for="star3">☆</label>
+              <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+              <label for="star2">☆</label>
+              <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+              <label for="star1">☆</label>
+              <div class="clear"></div>
+            </div>
+            <br>
+            <input type="text" id="comment" name="comment" placeholder="Comment" tabindex="3" required>
+            <br>
+            <input type="Submit" id="submit">
+          </form>
         </div>
-        <div class="list">
-          <ul>
-            <h2 id="Location">Our Location</h2>
-            <li>
-              <p>Amman-airport street</p>
-            </li>
-            <li>
-              <p>Jerash-Irbid - Amman International Road
-            </li>
-  
-          </ul>
+
+        <h2 id="underline">Comment section</h2>
+        <section id="blogSection">
+
+        </section>
+      </div>
+      <div class="right-column">
+        <div class="card">
+          <h2>Popular Books</h2>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51baoEVDKJL._SX327_BO1,204,203,200_.jpg"
+            alt="popular">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/51K84pomCRL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+            alt="popular">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/LordOfTheFliesBookCover.jpg/220px-LordOfTheFliesBookCover.jpg"
+            alt="popular">
         </div>
-        <div class="list">
-          <ul>
-            <h2>Opening Soon</h2>
-            <li>
-              <p>United Kingdom-London</p>
-            </li>
-            <li>
-              <p>Saudi Arabia-Jeddah</p>
-            </li>
-          </ul>
-        </div>
-        <div id="icons">
-          <a href="#"><img src="img/fb-icon.png" /></a>
-          <a href="#"><img src="img/insta-icon.png" /></a>
-          <a href="#"><img src="img/twit-icon.png" /></a>
-        </div>
-      </footer>
+      </div>
+    </div>
+  </main>
+  <section>
+    <script src="js/blog.js"></script>
+  </section>
+  <footer>
+
+    <div class="list">
+      <ul>
+        <h2 id="Contact">Contact Us</h2>
+        <li><a href="complaints@ltuc.com">LTUC</a></li>
+        <li><a href="tel:+962(6)4000700">+962(6)4000700</a></li>
+        <li><a href="mailto:hege@example.com">hege@example.com</a></li>
+        <li><a href="tel:+18009932665">(800) 993-2665</a></li>
+      </ul>
+    </div>
+    <div class="list">
+      <ul>
+        <h2 id="Location">Our Location</h2>
+        <li>
+          <p>Amman-airport street</p>
+        </li>
+        <li>
+          <p>Jerash-Irbid - Amman International Road
+        </li>
+
+      </ul>
+    </div>
+    <div class="list">
+      <ul>
+        <h2>Opening Soon</h2>
+        <li>
+          <p>United Kingdom-London</p>
+        </li>
+        <li>
+          <p>Saudi Arabia-Jeddah</p>
+        </li>
+      </ul>
+    </div>
+    <div id="icons">
+      <a href="#"><img src="img/fb-icon.png" /></a>
+      <a href="#"><img src="img/insta-icon.png" /></a>
+      <a href="#"><img src="img/twit-icon.png" /></a>
+    </div>
+  </footer>
 
 </body>
 

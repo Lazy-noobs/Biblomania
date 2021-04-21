@@ -95,7 +95,7 @@ container.appendChild(table);
 //             let quantity = e.target.value;
 //             // if(quantity<2||quantity==NaN||quantity==null){
 //             //     e.target.value=1;
-//             //     price.textContent=books[i].price; 
+//             //     price.textContent=books[i].price;
 //             // }
 //             price.textContent = books[i].price * quantity;
 //             console.log(quantity);
@@ -105,130 +105,130 @@ container.appendChild(table);
 //         }
 //     }
 // }
-let books=[];
-function getData(){
-    let data = localStorage.getItem('booksCart');
-    books=JSON.parse(data);
+let books = [];
+function getData() {
+  let data = localStorage.getItem('booksCart');
+  books = JSON.parse(data);
 }
 function renderTable() {
 
-    let hrow = document.createElement('tr');
-    table.appendChild(hrow);
-    let headerCell1 = document.createElement('th');
-    headerCell1.textContent = '';
-    hrow.appendChild(headerCell1);
-    let headerCell2 = document.createElement('th');
-    headerCell2.textContent = 'price';
-    hrow.appendChild(headerCell2);
-    let headerCell3 = document.createElement('th');
-    headerCell3.textContent = 'quantity';
-    hrow.appendChild(headerCell3);
-    let headerCell4 = document.createElement('th');
-    headerCell4.textContent = '';
-    hrow.appendChild(headerCell4);
+  let hrow = document.createElement('tr');
+  table.appendChild(hrow);
+  let headerCell1 = document.createElement('th');
+  headerCell1.textContent = '';
+  hrow.appendChild(headerCell1);
+  let headerCell2 = document.createElement('th');
+  headerCell2.textContent = 'price';
+  hrow.appendChild(headerCell2);
+  let headerCell3 = document.createElement('th');
+  headerCell3.textContent = 'quantity';
+  hrow.appendChild(headerCell3);
+  let headerCell4 = document.createElement('th');
+  headerCell4.textContent = '';
+  hrow.appendChild(headerCell4);
 
-    let totalArr = [];
-    totalArr.length=books.length;
-    let sum = 0;
+  let totalArr = [];
+  totalArr.length = books.length;
+  let sum = 0;
 
-    for (let i = 0; i < totalArr.length; i++) {
+  for (let i = 0; i < totalArr.length; i++) {
 
-        totalArr[i] = 0;
+    totalArr[i] = 0;
+
+  }
+  for (let i = 0; i < books.length; i++) {
+    let value;
+    let price;
+    let row = document.createElement('tr');
+    table.appendChild(row);
+    for (let j = 0; j < 4; j++) {
+      let cell = document.createElement('td');
+      row.appendChild(cell);
+      if (j === 0) {
+        let img = document.createElement('img');
+        img.src = books[i].imageLink;
+        cell.appendChild(img);
+      } else if (j === 1) {
+        price = document.createElement('p');
+        price.textContent = books[i].price;
+        cell.appendChild(price);
+      } else if (j === 2) {
+        let quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.addEventListener('input', getQuantity);
+        quantityInput.setAttribute('min', 0);
+        cell.appendChild(quantityInput);
+      } else if (j === 3) {
+        let removeButton = document.createElement('button');
+        removeButton.addEventListener('click', remove);
+        removeButton.textContent = 'REMOVE';
+        cell.appendChild(removeButton);
+      }
 
     }
-    for (let i = 0; i < books.length; i++) {
-        let value;
-        let price;
-        let row = document.createElement('tr');
-        table.appendChild(row);
-        for (let j = 0; j < 4; j++) {
-            let cell = document.createElement('td');
-            row.appendChild(cell);
-            if (j == 0) {
-                let img = document.createElement('img');
-                img.src = books[i].imageLink;
-                cell.appendChild(img);
-            } else if (j == 1) {
-                price = document.createElement('p');
-                price.textContent = books[i].price;
-                cell.appendChild(price);
-            } else if (j == 2) {
-                let quantityInput = document.createElement('input');
-                quantityInput.type = 'number';
-                quantityInput.addEventListener('input', getQuantity);
-                quantityInput.setAttribute('min', 0);
-                cell.appendChild(quantityInput);
-            } else if (j == 3) {
-                let removeButton = document.createElement('button');
-                removeButton.addEventListener('click', remove);
-                removeButton.textContent = 'REMOVE';
-                cell.appendChild(removeButton);
-            }
+    function getQuantity(e) {
+      let totalBookPrice = 0;
+      sum = 0;
+      value = e.target.value;
+      let quantity = e.target.value;
+      price.textContent = books[i].price * quantity;
+      totalBookPrice += books[i].price * quantity;
+      totalArr[i] = totalBookPrice;
 
-        }
-        function getQuantity(e) {
-            let totalBookPrice = 0;
-            sum=0;
-            value=e.target.value;
-            let quantity = e.target.value;
-            price.textContent = books[i].price * quantity;
-            totalBookPrice += books[i].price * quantity;
-            totalArr[i] = totalBookPrice;
+      for (let i = 0; i < totalArr.length; i++) {
+        // if(totalArr[i]==null){
+        //     totalArr[i]=0;
+        // }
+        sum += totalArr[i];
+      }
+      footerCell4.textContent = sum;
+      console.log(totalArr);
+      console.log(sum);
 
-            for(let i=0;i<totalArr.length;i++){
-                // if(totalArr[i]==null){
-                //     totalArr[i]=0;
-                // }
-                sum+=totalArr[i];
-            }
-            footerCell4.textContent=sum;
-            console.log(totalArr);
-            console.log(sum);
-            
-        }
-        function remove() {
-            row.textContent = '';
-            totalArr[i]=0;
-            sum=0;
-            for(let i=0;i<totalArr.length;i++){
-                // if(totalArr[i]==null){
-                //     totalArr[i]=0;
-                // }
-                sum+=totalArr[i];
-            }
-            footerCell4.textContent=sum;
-            console.log(totalArr);
-           
-        }
     }
+    function remove() {
+      row.textContent = '';
+      totalArr[i] = 0;
+      sum = 0;
+      for (let i = 0; i < totalArr.length; i++) {
+        // if(totalArr[i]==null){
+        //     totalArr[i]=0;
+        // }
+        sum += totalArr[i];
+      }
+      footerCell4.textContent = sum;
+      console.log(totalArr);
 
-    let brow = document.createElement('tr');
-    table.appendChild(brow);
-    let footerCell1 = document.createElement('th');
-    footerCell1.textContent = '';
-    brow.appendChild(footerCell1);
-    table.appendChild(brow);
-    let footerCell2 = document.createElement('th');
-    footerCell2.textContent = '';
-    brow.appendChild(footerCell2);
-    table.appendChild(brow);
-    let footerCell3 = document.createElement('th');
-    footerCell3.textContent = 'Total Price:';
-    brow.appendChild(footerCell3);
-    table.appendChild(brow);
-    let footerCell4 = document.createElement('th');
-    footerCell4.textContent = sum;
-    brow.appendChild(footerCell4);
-    
-    let button =document.getElementById("button-a");
-    button.onclick = function jsalert() {
-        if(sum!=0){
-        swal(`You are welcom any time`,`The total cost=${sum}`, "success");
-        localStorage.removeItem('booksCart');
-        button.style.display='none';
-        table.style.display='none';
-        }
-      };
+    }
+  }
+
+  let brow = document.createElement('tr');
+  table.appendChild(brow);
+  let footerCell1 = document.createElement('th');
+  footerCell1.textContent = '';
+  brow.appendChild(footerCell1);
+  table.appendChild(brow);
+  let footerCell2 = document.createElement('th');
+  footerCell2.textContent = '';
+  brow.appendChild(footerCell2);
+  table.appendChild(brow);
+  let footerCell3 = document.createElement('th');
+  footerCell3.textContent = 'Total Price:';
+  brow.appendChild(footerCell3);
+  table.appendChild(brow);
+  let footerCell4 = document.createElement('th');
+  footerCell4.textContent = sum;
+  brow.appendChild(footerCell4);
+
+  let button = document.getElementById('button-a');
+  button.onclick = function jsalert() {
+    if (sum != 0) {
+      swal('You are welcom any time', `The total cost is ${sum} JD`, 'success');
+      localStorage.removeItem('booksCart');
+      button.style.display = 'none';
+      table.style.display = 'none';
+    }
+  };
 }
 
 getData();
