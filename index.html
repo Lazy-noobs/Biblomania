@@ -7,99 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
   <title>Books Store</title>
 </head>
 
 <body>
+
   <header>
     <div class="site-logo">
-
-      <img src="img/b.png" alt="logo" width="50px"/>
+      <img src="img/b.png" alt="logo" width="50px" />
     </div>
-
-    <h1>Biblomania</h1>
-  
-
+    <h1>iblomania</h1>
     <nav>
       <ul>
 
         <li><a href="index.html">Home</a></li>
         <li><a href="Books.html">Books</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="cart.html">Cart</a> </li>
-        <li><a href="About.html">About us</a></li>
+        <li><a href="cart.html">Cart<span id="basketCount"></span></a> </li>
+        <li><a href="about.html">About us</a></li>
 
       </ul>
     </nav>
-
   </header>
+
   <main>
-    <br> <br> <br>
     <div id="slider">
       <img class="pic" id="first-image" src="imageSlaider/one.jpg" alt="">
       <img class="pic"  id="second-image" src="imageSlaider/two.jpg" alt="">
       <img class="pic"  id="third-image" src="imageSlaider/three.png" alt="">
       <img class="pic"  id="forth-image" src="imageSlaider/four.jpg" alt="">
     </div>
-  <br>
-  <div style="text-align:center; margin-left:200px; margin-right:200px;">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-  <br>
-  <h2>The Best Seller </h2>
-  <div class="best">
-    <span>
-      <img src="img/book6.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dignissim tortor. Etiam viverra
-        dignissim enim, nec facilisis enim imperdiet ege
-      </p>
-    </span>
-    <span>
-      <img src="img/book7.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dignissim tortor. Etiam viverra
-        dignissim enim, nec facilisis enim imperdiet ege
-      </p>
-    </span>
-    <span>
-      <img src="img/book8.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dignissim tortor. Etiam viverra
-        dignissim enim, nec facilisis enim imperdiet ege
-      </p>
-    </span>
-  </div>
-  <br>
-  <h2>Our Branchs </h2>
-  <div class="Locations">
-    <span id="loc1">
-      <img src="img/Loc1.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dignissim tortor. Etiam viverra
-        dignissim enim, nec facilisis enim imperdiet ege
-      </p>
-    </span>
-    <span id="loc2">
-      <img src="img/loc2.jpg" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis dignissim tortor. Etiam viverra
-        dignissim enim, nec facilisis enim imperdiet ege
-      </p>
-    </span>
-  </div>
-  <br>
-  <div>
-    <hr class="style-eight">
-  </div>
-</main>
-  <footer>
+    <h2>our main branches</h2>
+    <div id="mainBranch">
+      <div class="branch">
+        <img src="img/book-shop.jpg" alt="" class="loc">
+        <h3>Amman</h3>
 
+        <p>All days a week</p>
+        <p>Open Hours: 8am - 8pm</p>
+
+      </div>
+      <div class="branch">
+        <img src="img/reading-room_orig.jpeg" alt="" class="loc">
+        <h3>Irbid</h3>
+
+        <p>Sunday - Thursday</p>
+        <p>Open Hours: 8am - 8pm</p>
+
+      </div>
+    </div>
+
+    <h2>The Best Seller </h2>
+    <div id="bestSeller">
+      <div class="imgContainer">
+        <img src="img/diary-of-a-madman.jpg" alt="" class="besties">
+      </div>
+      <div class="imgContainer">
+        <img src="img/a-Dolls-house.jpg" alt="" class="besties">
+      </div>
+      <div class="imgContainer">
+        <img src="img/the-sound-of-the-mountain.jpg" alt="" class="besties">
+      </div>
+    </div>
+  </main>
+  <footer>
     <div class="list">
       <ul>
         <h2 id="Contact">Contact Us</h2>
@@ -112,17 +84,23 @@
     <div class="list">
       <ul>
         <h2 id="Location">Our Location</h2>
-        <li><p>Amman-airport street</p></li>
-        <li><p>Jerash-Irbid - Amman International Road</li>
-
+        <li>
+          <p>Amman-airport street</p>
+        </li>
+        <li>
+          <p>Jerash-Irbid - Amman International Road
+        </li>
       </ul>
     </div>
     <div class="list">
       <ul>
         <h2>Opening Soon</h2>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <p>United Kingdom-London</p>
+        </li>
+        <li>
+          <p>Saudi Arabia-Jeddah</p>
+        </li>
       </ul>
 
     </div>
@@ -132,8 +110,6 @@
       <a href="#"><img src="img/twit-icon.png" /></a>
     </div>
 
-
-    
 </body>
 <script src="js/app.js"></script>
 <script src="js/slaider.js"></script>

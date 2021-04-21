@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="css/cart.css" />
-    </head>
-    <body>
-        <header>
-            <img src="img/MyPost.png" />
-        
-            <div class="topnav">
-              <a href="index.html">Home</a>
-              <a href="Books.html">Books</a>
-              <a href="blog.html">Blog</a>
-              <a href="About.html">About us</a>
-        
-              <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder=" Search " name="search">
-                </form>
-              </div>
-            </div>
-        
-          </header>
-        <!-- <section class="container content-section">
+
+<head>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Books Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="site-logo">
+    
+          <img src="img/b.png" alt="logo" width="50px" />
+        </div>
+
+        <h1>iblomania</h1>
+        <nav>
+          <ul>
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="cart.html">Cart</a> </li>
+            <li><a href="About.html">About us</a></li>
+    
+          </ul>
+        </nav>
+    
+      </header>
+    <!-- <section class="container content-section">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
@@ -60,16 +68,105 @@
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </section> -->
+    
+    <h1 style="text-align: center; color: #123c69; margin: top 200px;; padding: auto;">Shopping cart</h1>
+        <main>
         <section id="orderList">
-
-        </section>
-        <section>
             <div id="sweet alert">
-                <button id="button-a">Confirm Process</button>
+                <button id="button-a">Checkout</button>
             </div>
         </section>
-        <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
-        <script src="js/cart.js"></script>
         
-    </body>
+        <section>
+            <!-- <div id="sweet alert">
+                <button id="button-a">Checkout</button>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- <footer>
+        <div class="list">
+          <ul>
+            <h2 id="Contact">Contact Us</h2>
+            <li><a href="complaints@ltuc.com">LTUC</a></li>
+            <li><a href="tel:+962(6)4000700">+962(6)4000700</a></li>
+            <li><a href="mailto:hege@example.com">hege@example.com</a></li>
+            <li><a href="tel:+18009932665">(800) 993-2665</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <h2 id="Location">Our Location</h2>
+            <li>
+              <p>Amman-airport street</p>
+            </li>
+            <li>
+              <p>Jerash-Irbid - Amman International Road
+            </li>
+    
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <h2>Opening Soon</h2>
+            <li>
+              <p>United Kingdom-London</p>
+            </li>
+            <li>
+              <p>Saudi Arabia-Jeddah</p>
+            </li>
+          </ul>
+        </div>
+        <div id="icons">
+          <a href="#"><img src="img/fb-icon.png" /></a>
+          <a href="#"><img src="img/insta-icon.png" /></a>
+          <a href="#"><img src="img/twit-icon.png" /></a>
+        </div>
+    
+    </footer> -->
+    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+    <script src="js/cart.js"></script>
+
+    <footer>
+        <div class="list">
+          <ul>
+            <h2 id="Contact">Contact Us</h2>
+            <li><a href="complaints@ltuc.com">LTUC</a></li>
+            <li><a href="tel:+962(6)4000700">+962(6)4000700</a></li>
+            <li><a href="mailto:hege@example.com">hege@example.com</a></li>
+            <li><a href="tel:+18009932665">(800) 993-2665</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <h2 id="Location">Our Location</h2>
+            <li>
+              <p>Amman-airport street</p>
+            </li>
+            <li>
+              <p>Jerash-Irbid - Amman International Road
+            </li>
+    
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <h2>Opening Soon</h2>
+            <li>
+              <p>United Kingdom-London</p>
+            </li>
+            <li>
+              <p>Saudi Arabia-Jeddah</p>
+            </li>
+          </ul>
+        </div>
+        <div id="icons">
+          <a href="#"><img src="img/fb-icon.png" /></a>
+          <a href="#"><img src="img/insta-icon.png" /></a>
+          <a href="#"><img src="img/twit-icon.png" /></a>
+        </div>
+    
+    </footer>
+</body>
+
 </html>

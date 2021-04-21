@@ -1,4 +1,7 @@
 'use strict';
+
+// creating an array of objects of the store products
+
 let books = [
   {
     'author': 'Chinua Achebe',
@@ -67,7 +70,7 @@ let books = [
     'language': 'Arabic',
     'link': 'https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n',
     'pages': 288,
-    'title': 'One Thousand and One Nights',
+    'title': 'One Thousand',
     'year': 1200,
     'genre': 'fantasy'
     ,
@@ -115,7 +118,7 @@ let books = [
     'language': 'French, English',
     'link': 'https://en.wikipedia.org/wiki/Molloy_(novel)\n',
     'pages': 256,
-    'title': 'Molloy, Malone Dies, The Unnamable, the trilogy',
+    'title': 'The Unnamable, the trilogy',
     'year': 1952,
     'genre': 'historical'
     ,
@@ -187,7 +190,7 @@ let books = [
     'language': 'French',
     'link': 'https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night\n',
     'pages': 505,
-    'title': 'Journey to the End of the Night',
+    'title': 'Journey of the Night',
     'year': 1932,
     'genre': 'fantasy'
     ,
@@ -426,7 +429,7 @@ let books = [
     'language': 'Spanish',
     'link': 'https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n',
     'pages': 417,
-    'title': 'One Hundred Years of Solitude',
+    'title': 'The Solitude',
     'year': 1967,
     'genre': 'science fiction'
     ,
@@ -444,7 +447,7 @@ let books = [
 
   },
   {
-    'author': 'Johann Wolfgang von Goethe',
+    'author': 'Johann Wolfgang',
     'country': 'Saxe-Weimar',
     'imageLink': 'img/faust.jpg',
     'language': 'German',
@@ -487,7 +490,7 @@ let books = [
     'language': 'Portuguese',
     'link': 'https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n',
     'pages': 494,
-    'title': 'The Devil to Pay in the Backlands',
+    'title': 'The Devil',
     'year': 1956,
     'genre': 'science fiction'
     ,
@@ -611,7 +614,7 @@ let books = [
     'language': 'Sanskrit',
     'link': 'https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam\n',
     'pages': 147,
-    'title': 'The recognition of Shakuntala',
+    'title': 'The Shakuntala',
     'year': 150,
     'genre': 'romance'
     ,
@@ -977,7 +980,7 @@ let books = [
     'language': 'Arabic',
     'link': 'https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North\n',
     'pages': 139,
-    'title': 'Season of Migration to the North',
+    'title': 'Season of Migration ',
     'year': 1966,
     'genre': 'historical'
     ,
@@ -1062,7 +1065,7 @@ let books = [
     'language': 'English',
     'link': 'https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman\n',
     'pages': 640,
-    'title': 'The Life And Opinions of Tristram Shandy',
+    'title': 'Opinions of Tristram Shandy',
     'year': 1760,
     'genre': 'historical'
     ,
@@ -1134,7 +1137,7 @@ let books = [
     'language': 'English',
     'link': 'https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn\n',
     'pages': 224,
-    'title': 'The Adventures of Huckleberry Finn',
+    'title': 'Huckleberry Finn',
     'year': 1884,
     'genre': 'historical'
     ,
@@ -1225,6 +1228,8 @@ let books = [
   }
 ];
 
+// To get a random price for each book in the previous array of objects
+
 let price = [];
 
 function generatePrice() {
@@ -1258,7 +1263,10 @@ function getPrice() {
 setPriceStorage();
 getPrice();
 
-console.log(books[9].price);
+//console.log(books[9].price);
+
+// Rendering the Products based on the it's category
+
 
 let fantasy = document.getElementById('fantasyDiv');
 let fantasyHeader = document.createElement('h2');
@@ -1281,62 +1289,73 @@ scienceFiction.appendChild(scienceFictionHeader);
 scienceFictionHeader.textContent = 'Science Fiction';
 
 
-
 for (let i = 0; i < books.length; i++) {
   if (books[i].genre === 'fantasy') {
+    let firstDiv = document.createElement('div');
+    fantasy.appendChild(firstDiv);
     let fantasyBook = document.createElement('img');
     fantasyBook.src = books[i].imageLink;
-    fantasy.appendChild(fantasyBook);
+    firstDiv.appendChild(fantasyBook);
     let para = document.createElement('p');
-    para.innerHTML = `title: ${books[i].title}<br>author: ${books[i].author}<br> year: ${books[i].year}<br> price: ${books[i].price}`;
-    fantasy.appendChild(para);
+    firstDiv.appendChild(para);
+    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price} JD`;
+    firstDiv.appendChild(para);
     let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    button.textContent = 'Add to Cart';
     button.id = i;
-    fantasy.appendChild(button);
+    firstDiv.appendChild(button);
     button.addEventListener('click', handleClickingToCart);
 
   } else if (books[i].genre === 'historical') {
+    let secDiv = document.createElement('div');
+    historical.appendChild(secDiv);
+
     let historicalBook = document.createElement('img');
     historicalBook.src = books[i].imageLink;
-    historical.appendChild(historicalBook);
+    secDiv.appendChild(historicalBook);
     let para = document.createElement('p');
-    para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price:${books[i].price}`;
-    historical.appendChild(para);
+    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
+    secDiv.appendChild(para);
     let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    button.textContent = 'Add to Cart';
     button.id = i;
-    historical.appendChild(button);
+    secDiv.appendChild(button);
     button.addEventListener('click', handleClickingToCart);
   } else if (books[i].genre === 'romance') {
+    let thirdDiv = document.createElement('div');
+    romance.appendChild(thirdDiv);
     let romanceBook = document.createElement('img');
     romanceBook.src = books[i].imageLink;
-    romance.appendChild(romanceBook);
+    thirdDiv.appendChild(romanceBook);
     let para = document.createElement('p');
-    romance.appendChild(para);
-    para.innerHTML = `titel: ${books[i].title}<br> author: ${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    thirdDiv.appendChild(para);
+    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
     let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    button.textContent = 'Add to Cart';
     button.id = i;
-    romance.appendChild(button);
+    thirdDiv.appendChild(button);
     button.addEventListener('click', handleClickingToCart);
   } else {
+    let fourthDiv = document.createElement('div');
+    scienceFiction.appendChild(fourthDiv);
     let scienceFictionBook = document.createElement('img');
     scienceFictionBook.src = books[i].imageLink;
-    scienceFiction.appendChild(scienceFictionBook);
+    fourthDiv.appendChild(scienceFictionBook);
     let para = document.createElement('p');
-    scienceFiction.appendChild(para);
-    para.innerHTML = `title: ${books[i].title}<br> author:${books[i].author}<br> year:${books[i].year}<br> price: ${books[i].price}`;
+    fourthDiv.appendChild(para);
+    para.innerHTML = `Title: ${books[i].title} <br>Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
     let button = document.createElement('button');
-    button.textContent = 'add to cart';
+    button.textContent = 'Add to Cart';
     button.id = i;
-
-    scienceFiction.appendChild(button);
+    fourthDiv.appendChild(button);
     button.addEventListener('click', handleClickingToCart);
 
   }
 
 }
+
+// creating a construtor function for books cart
+
 const BooksCart = function (items) {
   this.cartBooks = items;
 };
@@ -1359,6 +1378,8 @@ BooksCart.prototype.removeBook = function (index) {
 };
 
 let booksCart = new BooksCart([]);
+
+// event listener function for each product's button
 function handleClickingToCart() {
   event.preventDefault();
   let index = parseInt(event.target.id);
@@ -1371,20 +1392,15 @@ function handleClickingToCart() {
     showDuration: 5000
   });
 
-  // Invoke success notification
-  successNotification({
-    message: 'Simple success notification'
-  });
-
   // Use the same instance but pass a title
   successNotification({
-    title: 'Working',
-    message: 'Simple success notification'
+    title: 'Success',
+    message: 'Item added'
   });
   counter();
 }
 
-
+// This function to count the number of products in the basket
 function counter() {
   const booksCart = JSON.parse(localStorage.getItem('booksCart')) || [];
   let count = document.getElementById('basketCount');
