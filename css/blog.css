@@ -196,7 +196,7 @@ input {
 #blogComments #comment{
   font-style: italic;
   margin-bottom: 0px;
-  height: 50px
+  overflow:auto;
 
 }
 
