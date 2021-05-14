@@ -1289,70 +1289,35 @@ scienceFiction.appendChild(scienceFictionHeader);
 scienceFictionHeader.textContent = 'Science Fiction';
 
 
-for (let i = 0; i < books.length; i++) {
-  if (books[i].genre === 'fantasy') {
-    let firstDiv = document.createElement('div');
-    fantasy.appendChild(firstDiv);
-    let fantasyBook = document.createElement('img');
-    fantasyBook.src = books[i].imageLink;
-    firstDiv.appendChild(fantasyBook);
-    let para = document.createElement('p');
-    firstDiv.appendChild(para);
-    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price} JD`;
-    firstDiv.appendChild(para);
-    let button = document.createElement('button');
-    button.textContent = 'Add to Cart';
-    button.id = i;
-    firstDiv.appendChild(button);
-    button.addEventListener('click', handleClickingToCart);
-
-  } else if (books[i].genre === 'historical') {
-    let secDiv = document.createElement('div');
-    historical.appendChild(secDiv);
-
-    let historicalBook = document.createElement('img');
-    historicalBook.src = books[i].imageLink;
-    secDiv.appendChild(historicalBook);
-    let para = document.createElement('p');
-    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
-    secDiv.appendChild(para);
-    let button = document.createElement('button');
-    button.textContent = 'Add to Cart';
-    button.id = i;
-    secDiv.appendChild(button);
-    button.addEventListener('click', handleClickingToCart);
-  } else if (books[i].genre === 'romance') {
-    let thirdDiv = document.createElement('div');
-    romance.appendChild(thirdDiv);
-    let romanceBook = document.createElement('img');
-    romanceBook.src = books[i].imageLink;
-    thirdDiv.appendChild(romanceBook);
-    let para = document.createElement('p');
-    thirdDiv.appendChild(para);
-    para.innerHTML = `Title: ${books[i].title}<br> Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
-    let button = document.createElement('button');
-    button.textContent = 'Add to Cart';
-    button.id = i;
-    thirdDiv.appendChild(button);
-    button.addEventListener('click', handleClickingToCart);
-  } else {
-    let fourthDiv = document.createElement('div');
-    scienceFiction.appendChild(fourthDiv);
-    let scienceFictionBook = document.createElement('img');
-    scienceFictionBook.src = books[i].imageLink;
-    fourthDiv.appendChild(scienceFictionBook);
-    let para = document.createElement('p');
-    fourthDiv.appendChild(para);
-    para.innerHTML = `Title: ${books[i].title} <br>Author: ${books[i].author}<br> Year: ${books[i].year}<br> Price: ${books[i].price}`;
-    let button = document.createElement('button');
-    button.textContent = 'Add to Cart';
-    button.id = i;
-    fourthDiv.appendChild(button);
-    button.addEventListener('click', handleClickingToCart);
-
-  }
-
+function render(bookGenre, x) {
+  let div = document.createElement("div");
+  bookGenre.appendChild(div);
+  let rBook = document.createElement("img");
+  rBook.src = books[x].imageLink;
+  div.appendChild(rBook);
+  let info = document.createElement("p");
+  info.innerHTML = `Title: ${books[x].title}<br> Author: ${books[x].author}<br> Year: ${books[x].year}<br> Price: ${books[x].price} JD`;
+  div.appendChild(info);
+  let button = document.createElement("button");
+  button.textContent = "Add to Cart";
+  button.id = x;
+  div.appendChild(button);
+  button.addEventListener("click", handleClickingToCart);
 }
+//the for that renders the books.
+
+for (let i = 0; i < books.length; i++) {
+  if (books[i].genre === "fantasy") {
+    render(fantasy, i);
+  } else if (books[i].genre === "historical") {
+    render(historical, i);
+  } else if (books[i].genre === "romance") {
+    render(romance, i);
+  } else {
+    render(scienceFiction, i);
+  }
+}
+
 
 // creating a construtor function for books cart
 
